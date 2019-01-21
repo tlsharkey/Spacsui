@@ -2,46 +2,46 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Data">
-      <UniqueIdentifier>{b84e235f-7e9f-4bc4-b14a-227e2834fbb4}</UniqueIdentifier>
+      <UniqueIdentifier>{f1c8556f-21c0-4711-a1e3-21e9a050854b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono">
-      <UniqueIdentifier>{ea240b87-3e43-407f-8200-0fcc6dd9cd10}</UniqueIdentifier>
+      <UniqueIdentifier>{3f06d556-d0c5-4d8c-afcb-1d7ef6a33e3e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\2.0">
-      <UniqueIdentifier>{ff0d71ed-71f8-4410-9c2b-73bf1c7df220}</UniqueIdentifier>
+      <UniqueIdentifier>{274f0b78-5c9d-4339-a12c-2061d9fa08f1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\2.0\Browsers">
-      <UniqueIdentifier>{6ec7b647-c98a-447b-8a04-d355d32ae414}</UniqueIdentifier>
+      <UniqueIdentifier>{2143fb66-8b87-40e2-a602-056a1b685110}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\4.0">
-      <UniqueIdentifier>{bf187dde-7d39-4a6e-a4f9-8a701d18194f}</UniqueIdentifier>
+      <UniqueIdentifier>{b00171c9-5d69-4e99-9325-0fa712ad8dc1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\4.0\Browsers">
-      <UniqueIdentifier>{668a080f-4470-4be2-af7a-f7b919924428}</UniqueIdentifier>
+      <UniqueIdentifier>{42af7687-2ab2-4282-8c85-ab05c48d748b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\4.5">
-      <UniqueIdentifier>{be907f5a-8995-4706-89b3-cb26a539e93f}</UniqueIdentifier>
+      <UniqueIdentifier>{72c4dee4-f79d-49bf-88ae-8ba75e3a91e9}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\4.5\Browsers">
-      <UniqueIdentifier>{950b75be-29fc-4df7-a9be-dde6a3395d34}</UniqueIdentifier>
+      <UniqueIdentifier>{b68f4c6b-f89f-431e-8373-2f2bf13bb83b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\mconfig">
-      <UniqueIdentifier>{e21bfa21-cef7-4d5b-8b40-631b40c5f693}</UniqueIdentifier>
+      <UniqueIdentifier>{a73d7d5c-fbcf-4faa-89ab-e7fafc6f6de9}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\Metadata">
-      <UniqueIdentifier>{d6401aee-2894-484b-8e19-120f2e30a69e}</UniqueIdentifier>
+      <UniqueIdentifier>{15d004f7-505f-436b-be7d-b3fba3c21c51}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\Resources">
-      <UniqueIdentifier>{8897c6fe-1f70-4563-b73b-05e8d6e92ba4}</UniqueIdentifier>
+      <UniqueIdentifier>{86cdc9a6-a9a7-4c69-85d3-8c04c3dba453}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\Resources">
-      <UniqueIdentifier>{5db8cae9-12ed-4316-9d8c-eae857974a61}</UniqueIdentifier>
+      <UniqueIdentifier>{3db68dbb-117b-422f-ba5b-cffcfdb071d0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc">
-      <UniqueIdentifier>{508a53ea-3fc8-46d9-a5d7-d9e0b845deb4}</UniqueIdentifier>
+      <UniqueIdentifier>{2f30619d-95d2-4a1f-af86-34db030fef70}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data">
-      <UniqueIdentifier>{d43fb6ac-02df-4907-8e33-7d8ba1521e71}</UniqueIdentifier>
+      <UniqueIdentifier>{5d2ea642-7eb8-435c-812d-cf12c003d12b}</UniqueIdentifier>
     </Filter>
     <Resource Include="$(MSBuildThisFileDirectory)Resource.res" />
     <None Include="$(MSBuildThisFileDirectory)StoreManifest.xml" />
@@ -142,12 +142,9 @@
     </None>
     <None Include="$(MSBuildThisFileDirectory)PlaneFinding.dll" />
     <None Include="$(MSBuildThisFileDirectory)AudioPluginMsHRTF.dll" />
+    <None Include="$(MSBuildThisFileDirectory)MicStreamSelector.dll" />
     <None Include="$(MSBuildThisFileDirectory)GpuTiming.dll" />
     <None Include="$(MSBuildThisFileDirectory)SharingClient.dll" />
     <None Include="$(MSBuildThisFileDirectory)SpatialUnderstanding.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="$(OutDir)GameAssembly.dll" />
-    <None Include="$(OutDir)GameAssembly.pdb" />
   </ItemGroup>
 </Project>

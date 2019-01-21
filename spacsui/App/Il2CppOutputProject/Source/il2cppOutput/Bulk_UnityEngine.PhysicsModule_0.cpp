@@ -40,6 +40,8 @@ struct ColliderU5BU5D_t70D1FDAE17E4359298B2BAA828048D1B7CFFE252;
 struct Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621;
 // UnityEngine.ContactPoint[]
 struct ContactPointU5BU5D_t10BB5D5BFFFA3C919FD97DFDEDB49D954AFB8EAA;
+// UnityEngine.Joint
+struct Joint_t734F77C82E6372173403FCA61D9E7FC4618595AF;
 // UnityEngine.Mesh
 struct Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C;
 // UnityEngine.MeshCollider
@@ -52,6 +54,8 @@ struct RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57;
 struct Renderer_t0556D67DD582620D1F495627EDE30D03284151F4;
 // UnityEngine.Rigidbody
 struct Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5;
+// UnityEngine.SpringJoint
+struct SpringJoint_t2D196194480E339F728B463619720385523B09AF;
 // UnityEngine.Transform
 struct Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA;
 
@@ -1611,6 +1615,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // COLLIDER_T0FEEB36760860AD21B3B1F0509C365B393EC4BDF_H
+#ifndef JOINT_T734F77C82E6372173403FCA61D9E7FC4618595AF_H
+#define JOINT_T734F77C82E6372173403FCA61D9E7FC4618595AF_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.Joint
+struct  Joint_t734F77C82E6372173403FCA61D9E7FC4618595AF  : public Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // JOINT_T734F77C82E6372173403FCA61D9E7FC4618595AF_H
 #ifndef RENDERER_T0556D67DD582620D1F495627EDE30D03284151F4_H
 #define RENDERER_T0556D67DD582620D1F495627EDE30D03284151F4_H
 #ifdef __clang__
@@ -1731,6 +1755,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // CHARACTERCONTROLLER_T0ED98F461DBB7AC5B189C190153D83D5888BF93E_H
+#ifndef FIXEDJOINT_TE700873B552522792ED1B9A42DA62E511DC4A266_H
+#define FIXEDJOINT_TE700873B552522792ED1B9A42DA62E511DC4A266_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.FixedJoint
+struct  FixedJoint_tE700873B552522792ED1B9A42DA62E511DC4A266  : public Joint_t734F77C82E6372173403FCA61D9E7FC4618595AF
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FIXEDJOINT_TE700873B552522792ED1B9A42DA62E511DC4A266_H
 #ifndef MESHCOLLIDER_T60EB55ADE92499FE8D1AA206D2BD96E65B2766DE_H
 #define MESHCOLLIDER_T60EB55ADE92499FE8D1AA206D2BD96E65B2766DE_H
 #ifdef __clang__
@@ -1771,6 +1815,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // SPHERECOLLIDER_TAC3E5E20B385DF1C0B17F3EA5C7214F71367706F_H
+#ifndef SPRINGJOINT_T2D196194480E339F728B463619720385523B09AF_H
+#define SPRINGJOINT_T2D196194480E339F728B463619720385523B09AF_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.SpringJoint
+struct  SpringJoint_t2D196194480E339F728B463619720385523B09AF  : public Joint_t734F77C82E6372173403FCA61D9E7FC4618595AF
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SPRINGJOINT_T2D196194480E339F728B463619720385523B09AF_H
 // UnityEngine.ContactPoint[]
 struct ContactPointU5BU5D_t10BB5D5BFFFA3C919FD97DFDEDB49D954AFB8EAA  : public RuntimeArray
 {
@@ -1930,6 +1994,8 @@ extern "C" IL2CPP_METHOD_ATTR void CharacterController_get_velocity_Injected_m0E
 extern "C" IL2CPP_METHOD_ATTR void Component__ctor_m5E2740C0ACA4B368BC460315FAA2EDBFEAC0B8EF (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Collider::get_bounds_Injected(UnityEngine.Bounds&)
 extern "C" IL2CPP_METHOD_ATTR void Collider_get_bounds_Injected_m90D0FE433CCD44CC83E1089055A5A17286F9B1E6 (Collider_t0FEEB36760860AD21B3B1F0509C365B393EC4BDF * __this, Bounds_tA2716F5212749C61B0E7B7B77E0CD3D79B742890 * ___ret0, const RuntimeMethod* method);
+// System.Void UnityEngine.Joint::set_anchor_Injected(UnityEngine.Vector3&)
+extern "C" IL2CPP_METHOD_ATTR void Joint_set_anchor_Injected_mCDEEE334517B97D137C1AE4ADAAFAD9CD85399EB (Joint_t734F77C82E6372173403FCA61D9E7FC4618595AF * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___value0, const RuntimeMethod* method);
 // System.Void UnityEngine.Physics::get_defaultPhysicsScene_Injected(UnityEngine.PhysicsScene&)
 extern "C" IL2CPP_METHOD_ATTR void Physics_get_defaultPhysicsScene_Injected_mEAB07CA5307D0DDB331A31E6A6BA28CF83009262 (PhysicsScene_tC24001806A99648F6EFD4D63957D47D8AB1668F5 * ___ret0, const RuntimeMethod* method);
 // UnityEngine.PhysicsScene UnityEngine.Physics::get_defaultPhysicsScene()
@@ -2043,6 +2109,8 @@ extern "C" IL2CPP_METHOD_ATTR void Rigidbody_set_velocity_Injected_mA0CBA4077CAD
 extern "C" IL2CPP_METHOD_ATTR void Rigidbody_get_angularVelocity_Injected_mF130145BC134034C2ECB1C4E9BF276F0A63EC0D1 (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___ret0, const RuntimeMethod* method);
 // System.Void UnityEngine.Rigidbody::set_angularVelocity_Injected(UnityEngine.Vector3&)
 extern "C" IL2CPP_METHOD_ATTR void Rigidbody_set_angularVelocity_Injected_mC5F63763F3701505D5F8E41CCE7F6325F1024783 (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___value0, const RuntimeMethod* method);
+// System.Void UnityEngine.Rigidbody::get_centerOfMass_Injected(UnityEngine.Vector3&)
+extern "C" IL2CPP_METHOD_ATTR void Rigidbody_get_centerOfMass_Injected_m15590C0C367EB322CF67A40CFE2A28A814A8766F (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___ret0, const RuntimeMethod* method);
 // System.Void UnityEngine.Rigidbody::get_position_Injected(UnityEngine.Vector3&)
 extern "C" IL2CPP_METHOD_ATTR void Rigidbody_get_position_Injected_m8B581634C88AB745341D4ACF1CC12544769EC019 (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___ret0, const RuntimeMethod* method);
 // System.Void UnityEngine.Rigidbody::set_position_Injected(UnityEngine.Vector3&)
@@ -2288,6 +2356,66 @@ extern "C" void ControllerColliderHit_tB009AA7F769B4A3E988DEF71F4C5A29AB6A38968_
 // Conversion method for clean up from marshalling of: UnityEngine.ControllerColliderHit
 extern "C" void ControllerColliderHit_tB009AA7F769B4A3E988DEF71F4C5A29AB6A38968_marshal_com_cleanup(ControllerColliderHit_tB009AA7F769B4A3E988DEF71F4C5A29AB6A38968_marshaled_com& marshaled)
 {
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.Joint::set_connectedBody(UnityEngine.Rigidbody)
+extern "C" IL2CPP_METHOD_ATTR void Joint_set_connectedBody_mB5843F21494B4468A218DA96238467710126F762 (Joint_t734F77C82E6372173403FCA61D9E7FC4618595AF * __this, Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * ___value0, const RuntimeMethod* method)
+{
+	typedef void (*Joint_set_connectedBody_mB5843F21494B4468A218DA96238467710126F762_ftn) (Joint_t734F77C82E6372173403FCA61D9E7FC4618595AF *, Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 *);
+	static Joint_set_connectedBody_mB5843F21494B4468A218DA96238467710126F762_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Joint_set_connectedBody_mB5843F21494B4468A218DA96238467710126F762_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Joint::set_connectedBody(UnityEngine.Rigidbody)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.Joint::set_anchor(UnityEngine.Vector3)
+extern "C" IL2CPP_METHOD_ATTR void Joint_set_anchor_m9584AAAB1BA704C95E4C5C2E4844E45E3ADCA9D3 (Joint_t734F77C82E6372173403FCA61D9E7FC4618595AF * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___value0, const RuntimeMethod* method)
+{
+	{
+		Joint_set_anchor_Injected_mCDEEE334517B97D137C1AE4ADAAFAD9CD85399EB(__this, (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&___value0), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Joint::set_breakForce(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void Joint_set_breakForce_mDB7D58CE20412259C5717872ADC9A0B780857BF7 (Joint_t734F77C82E6372173403FCA61D9E7FC4618595AF * __this, float ___value0, const RuntimeMethod* method)
+{
+	typedef void (*Joint_set_breakForce_mDB7D58CE20412259C5717872ADC9A0B780857BF7_ftn) (Joint_t734F77C82E6372173403FCA61D9E7FC4618595AF *, float);
+	static Joint_set_breakForce_mDB7D58CE20412259C5717872ADC9A0B780857BF7_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Joint_set_breakForce_mDB7D58CE20412259C5717872ADC9A0B780857BF7_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Joint::set_breakForce(System.Single)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.Joint::set_breakTorque(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void Joint_set_breakTorque_m586C72D45EC3F17E43D6842118512FA403C72641 (Joint_t734F77C82E6372173403FCA61D9E7FC4618595AF * __this, float ___value0, const RuntimeMethod* method)
+{
+	typedef void (*Joint_set_breakTorque_m586C72D45EC3F17E43D6842118512FA403C72641_ftn) (Joint_t734F77C82E6372173403FCA61D9E7FC4618595AF *, float);
+	static Joint_set_breakTorque_m586C72D45EC3F17E43D6842118512FA403C72641_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Joint_set_breakTorque_m586C72D45EC3F17E43D6842118512FA403C72641_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Joint::set_breakTorque(System.Single)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.Joint::set_anchor_Injected(UnityEngine.Vector3&)
+extern "C" IL2CPP_METHOD_ATTR void Joint_set_anchor_Injected_mCDEEE334517B97D137C1AE4ADAAFAD9CD85399EB (Joint_t734F77C82E6372173403FCA61D9E7FC4618595AF * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___value0, const RuntimeMethod* method)
+{
+	typedef void (*Joint_set_anchor_Injected_mCDEEE334517B97D137C1AE4ADAAFAD9CD85399EB_ftn) (Joint_t734F77C82E6372173403FCA61D9E7FC4618595AF *, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *);
+	static Joint_set_anchor_Injected_mCDEEE334517B97D137C1AE4ADAAFAD9CD85399EB_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Joint_set_anchor_Injected_mCDEEE334517B97D137C1AE4ADAAFAD9CD85399EB_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Joint::set_anchor_Injected(UnityEngine.Vector3&)");
+	_il2cpp_icall_func(__this, ___value0);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -3914,6 +4042,35 @@ extern "C" IL2CPP_METHOD_ATTR void Rigidbody_set_angularVelocity_m1839DCBC87B01E
 		return;
 	}
 }
+// System.Void UnityEngine.Rigidbody::set_useGravity(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void Rigidbody_set_useGravity_mB0D957A9D8A9819E18D2E81F465C5C0B60CBC6DA (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, bool ___value0, const RuntimeMethod* method)
+{
+	typedef void (*Rigidbody_set_useGravity_mB0D957A9D8A9819E18D2E81F465C5C0B60CBC6DA_ftn) (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 *, bool);
+	static Rigidbody_set_useGravity_mB0D957A9D8A9819E18D2E81F465C5C0B60CBC6DA_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Rigidbody_set_useGravity_mB0D957A9D8A9819E18D2E81F465C5C0B60CBC6DA_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody::set_useGravity(System.Boolean)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.Rigidbody::set_isKinematic(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void Rigidbody_set_isKinematic_m856AB59E5A6207892C439AFC8DDF5620B941E71B (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, bool ___value0, const RuntimeMethod* method)
+{
+	typedef void (*Rigidbody_set_isKinematic_m856AB59E5A6207892C439AFC8DDF5620B941E71B_ftn) (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 *, bool);
+	static Rigidbody_set_isKinematic_m856AB59E5A6207892C439AFC8DDF5620B941E71B_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Rigidbody_set_isKinematic_m856AB59E5A6207892C439AFC8DDF5620B941E71B_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody::set_isKinematic(System.Boolean)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// UnityEngine.Vector3 UnityEngine.Rigidbody::get_centerOfMass()
+extern "C" IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  Rigidbody_get_centerOfMass_m616EAA0BFA8FB7413D6FCB18AD937009DC0929F6 (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, const RuntimeMethod* method)
+{
+	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Rigidbody_get_centerOfMass_Injected_m15590C0C367EB322CF67A40CFE2A28A814A8766F(__this, (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&V_0), /*hidden argument*/NULL);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_0 = V_0;
+		return L_0;
+	}
+}
 // UnityEngine.Vector3 UnityEngine.Rigidbody::get_position()
 extern "C" IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  Rigidbody_get_position_m478D060638E43DE3AE9C931A42593484B8310113 (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, const RuntimeMethod* method)
 {
@@ -4004,6 +4161,15 @@ extern "C" IL2CPP_METHOD_ATTR void Rigidbody_set_angularVelocity_Injected_mC5F63
 	_il2cpp_icall_func = (Rigidbody_set_angularVelocity_Injected_mC5F63763F3701505D5F8E41CCE7F6325F1024783_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody::set_angularVelocity_Injected(UnityEngine.Vector3&)");
 	_il2cpp_icall_func(__this, ___value0);
 }
+// System.Void UnityEngine.Rigidbody::get_centerOfMass_Injected(UnityEngine.Vector3&)
+extern "C" IL2CPP_METHOD_ATTR void Rigidbody_get_centerOfMass_Injected_m15590C0C367EB322CF67A40CFE2A28A814A8766F (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___ret0, const RuntimeMethod* method)
+{
+	typedef void (*Rigidbody_get_centerOfMass_Injected_m15590C0C367EB322CF67A40CFE2A28A814A8766F_ftn) (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 *, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *);
+	static Rigidbody_get_centerOfMass_Injected_m15590C0C367EB322CF67A40CFE2A28A814A8766F_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Rigidbody_get_centerOfMass_Injected_m15590C0C367EB322CF67A40CFE2A28A814A8766F_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody::get_centerOfMass_Injected(UnityEngine.Vector3&)");
+	_il2cpp_icall_func(__this, ___ret0);
+}
 // System.Void UnityEngine.Rigidbody::get_position_Injected(UnityEngine.Vector3&)
 extern "C" IL2CPP_METHOD_ATTR void Rigidbody_get_position_Injected_m8B581634C88AB745341D4ACF1CC12544769EC019 (Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___ret0, const RuntimeMethod* method)
 {
@@ -4066,6 +4232,41 @@ extern "C" IL2CPP_METHOD_ATTR void Rigidbody_MoveRotation_Injected_m283E5FB82CB1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.SpringJoint::set_spring(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void SpringJoint_set_spring_mC99EBC17935135ECBCB7AFEA61EEA1BFC38A5166 (SpringJoint_t2D196194480E339F728B463619720385523B09AF * __this, float ___value0, const RuntimeMethod* method)
+{
+	typedef void (*SpringJoint_set_spring_mC99EBC17935135ECBCB7AFEA61EEA1BFC38A5166_ftn) (SpringJoint_t2D196194480E339F728B463619720385523B09AF *, float);
+	static SpringJoint_set_spring_mC99EBC17935135ECBCB7AFEA61EEA1BFC38A5166_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (SpringJoint_set_spring_mC99EBC17935135ECBCB7AFEA61EEA1BFC38A5166_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SpringJoint::set_spring(System.Single)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.SpringJoint::set_damper(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void SpringJoint_set_damper_mED3715ED4A65B15EA526AFB39C4A4B9F1126E0BF (SpringJoint_t2D196194480E339F728B463619720385523B09AF * __this, float ___value0, const RuntimeMethod* method)
+{
+	typedef void (*SpringJoint_set_damper_mED3715ED4A65B15EA526AFB39C4A4B9F1126E0BF_ftn) (SpringJoint_t2D196194480E339F728B463619720385523B09AF *, float);
+	static SpringJoint_set_damper_mED3715ED4A65B15EA526AFB39C4A4B9F1126E0BF_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (SpringJoint_set_damper_mED3715ED4A65B15EA526AFB39C4A4B9F1126E0BF_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SpringJoint::set_damper(System.Single)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.SpringJoint::set_tolerance(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void SpringJoint_set_tolerance_m4AA5A0498427AE0B7B09567116680D4071851D7D (SpringJoint_t2D196194480E339F728B463619720385523B09AF * __this, float ___value0, const RuntimeMethod* method)
+{
+	typedef void (*SpringJoint_set_tolerance_m4AA5A0498427AE0B7B09567116680D4071851D7D_ftn) (SpringJoint_t2D196194480E339F728B463619720385523B09AF *, float);
+	static SpringJoint_set_tolerance_m4AA5A0498427AE0B7B09567116680D4071851D7D_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (SpringJoint_set_tolerance_m4AA5A0498427AE0B7B09567116680D4071851D7D_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SpringJoint::set_tolerance(System.Single)");
+	_il2cpp_icall_func(__this, ___value0);
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

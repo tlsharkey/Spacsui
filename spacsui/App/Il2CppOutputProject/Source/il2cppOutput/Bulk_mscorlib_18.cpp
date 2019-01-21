@@ -1591,6 +1591,7 @@ extern const uint32_t WaitHandle_WaitOneNative_mC25327F2B99DBB404B62FD48CFCBDB32
 extern const uint32_t WaitHandle_WaitOne_m0E8BFEEF95DC452E7C5A17DCA57D24F38FF7C467_MetadataUsageId;
 extern const uint32_t WaitHandle_WaitOne_m6283DC18BCD374B579549B156DD30AAA74E64C89_MetadataUsageId;
 extern const uint32_t WaitHandle__cctor_m007CFC1D3AC126BF18F2000C962A2C73EB73D671_MetadataUsageId;
+extern const uint32_t WaitHandle_get_Handle_m8307DF9FA6EA6FF8D4978631179D338CE294CF6D_MetadataUsageId;
 extern const uint32_t WaitHandle_get_SafeWaitHandle_m9BA6EA0D8DBD059147DE77EE1E36181EEB5A8AB1_MetadataUsageId;
 extern const uint32_t WaitHandle_set_Handle_m174F142FBE3A6EBEF358B389AE825BF2569C2389_MetadataUsageId;
 extern const uint32_t WaitOrTimerCallback_BeginInvoke_m86C8EC9E231C1076272729D07B6331A3253150CF_MetadataUsageId;
@@ -15456,12 +15457,12 @@ inline void List_1_set_Capacity_m0DA623E0A9843F83E643A5E032D775F990F3863E (List_
 }
 // System.Void System.Threading.WaitHandle::Init()
 extern "C" IL2CPP_METHOD_ATTR void WaitHandle_Init_m63320FFB796EB59BF6217787185DD0B9BCE7C6FD (WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6 * __this, const RuntimeMethod* method);
+// System.IntPtr System.Runtime.InteropServices.SafeHandle::DangerousGetHandle()
+extern "C" IL2CPP_METHOD_ATTR intptr_t SafeHandle_DangerousGetHandle_m9014DC4C279F2EF9F9331915135F0AF5AF8A4368 (SafeHandle_t1E326D75E23FD5BB6D40BA322298FDC6526CC383 * __this, const RuntimeMethod* method);
 // System.Void System.Runtime.InteropServices.SafeHandle::SetHandleAsInvalid()
 extern "C" IL2CPP_METHOD_ATTR void SafeHandle_SetHandleAsInvalid_mAFA4A01F6FB566AB67312B96E5024088BDF255F6 (SafeHandle_t1E326D75E23FD5BB6D40BA322298FDC6526CC383 * __this, const RuntimeMethod* method);
 // System.Void Microsoft.Win32.SafeHandles.SafeWaitHandle::.ctor(System.IntPtr,System.Boolean)
 extern "C" IL2CPP_METHOD_ATTR void SafeWaitHandle__ctor_m7A02720A5A03917CCA8DD68406A124C4AB76191A (SafeWaitHandle_t51DB35FF382E636FF3B868D87816733894D46CF2 * __this, intptr_t ___existingHandle0, bool ___ownsHandle1, const RuntimeMethod* method);
-// System.IntPtr System.Runtime.InteropServices.SafeHandle::DangerousGetHandle()
-extern "C" IL2CPP_METHOD_ATTR intptr_t SafeHandle_DangerousGetHandle_m9014DC4C279F2EF9F9331915135F0AF5AF8A4368 (SafeHandle_t1E326D75E23FD5BB6D40BA322298FDC6526CC383 * __this, const RuntimeMethod* method);
 // System.Boolean System.Threading.WaitHandle::WaitOne(System.Int64,System.Boolean)
 extern "C" IL2CPP_METHOD_ATTR bool WaitHandle_WaitOne_m6283DC18BCD374B579549B156DD30AAA74E64C89 (WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6 * __this, int64_t ___timeout0, bool ___exitContext1, const RuntimeMethod* method);
 // System.Boolean System.Threading.WaitHandle::InternalWaitOne(System.Runtime.InteropServices.SafeHandle,System.Int64,System.Boolean,System.Boolean)
@@ -29333,7 +29334,7 @@ IL_005d:
 		WorkStealingQueueU5BU5D_tB0FC166606C799616475C287839895D7E987FAE9* L_27 = V_2;
 		NullCheck(L_27);
 		NullCheck(L_26);
-		int32_t L_28 = VirtFuncInvoker1< int32_t, int32_t >::Invoke(6 /* System.Int32 System.Random::Next(System.Int32) */, L_26, (((int32_t)((int32_t)(((RuntimeArray *)L_27)->max_length)))));
+		int32_t L_28 = VirtFuncInvoker1< int32_t, int32_t >::Invoke(7 /* System.Int32 System.Random::Next(System.Int32) */, L_26, (((int32_t)((int32_t)(((RuntimeArray *)L_27)->max_length)))));
 		V_3 = L_28;
 		WorkStealingQueueU5BU5D_tB0FC166606C799616475C287839895D7E987FAE9* L_29 = V_2;
 		NullCheck(L_29);
@@ -32624,7 +32625,7 @@ IL_020b:
 		ManualResetEvent_tDFAF117B200ECA4CCF4FD09593F949A016D55408 * L_71 = __this->get_changed_2();
 		int32_t L_72 = V_1;
 		NullCheck(L_71);
-		VirtFuncInvoker1< bool, int32_t >::Invoke(10 /* System.Boolean System.Threading.WaitHandle::WaitOne(System.Int32) */, L_71, L_72);
+		VirtFuncInvoker1< bool, int32_t >::Invoke(11 /* System.Boolean System.Threading.WaitHandle::WaitOne(System.Int32) */, L_71, L_72);
 		goto IL_001a;
 	}
 }
@@ -33304,6 +33305,38 @@ extern "C" IL2CPP_METHOD_ATTR void WaitHandle_Init_m63320FFB796EB59BF6217787185D
 		return;
 	}
 }
+// System.IntPtr System.Threading.WaitHandle::get_Handle()
+extern "C" IL2CPP_METHOD_ATTR intptr_t WaitHandle_get_Handle_m8307DF9FA6EA6FF8D4978631179D338CE294CF6D (WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (WaitHandle_get_Handle_m8307DF9FA6EA6FF8D4978631179D338CE294CF6D_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		SafeWaitHandle_t51DB35FF382E636FF3B868D87816733894D46CF2 * L_0 = __this->get_safeWaitHandle_4();
+		il2cpp_codegen_memory_barrier();
+		if (!L_0)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		SafeWaitHandle_t51DB35FF382E636FF3B868D87816733894D46CF2 * L_1 = __this->get_safeWaitHandle_4();
+		il2cpp_codegen_memory_barrier();
+		NullCheck(L_1);
+		intptr_t L_2 = SafeHandle_DangerousGetHandle_m9014DC4C279F2EF9F9331915135F0AF5AF8A4368(L_1, /*hidden argument*/NULL);
+		return (intptr_t)L_2;
+	}
+
+IL_0018:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6_il2cpp_TypeInfo_var);
+		intptr_t L_3 = ((WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6_StaticFields*)il2cpp_codegen_static_fields_for(WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6_il2cpp_TypeInfo_var))->get_InvalidHandle_10();
+		return (intptr_t)L_3;
+	}
+}
 // System.Void System.Threading.WaitHandle::set_Handle(System.IntPtr)
 extern "C" IL2CPP_METHOD_ATTR void WaitHandle_set_Handle_m174F142FBE3A6EBEF358B389AE825BF2569C2389 (WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6 * __this, intptr_t ___value0, const RuntimeMethod* method)
 {
@@ -33439,7 +33472,7 @@ IL_0019:
 extern "C" IL2CPP_METHOD_ATTR bool WaitHandle_WaitOne_mEB04D9BA65731571C5ED2B68396B47FA686ED8BB (WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6 * __this, const RuntimeMethod* method)
 {
 	{
-		bool L_0 = VirtFuncInvoker2< bool, int32_t, bool >::Invoke(8 /* System.Boolean System.Threading.WaitHandle::WaitOne(System.Int32,System.Boolean) */, __this, (-1), (bool)0);
+		bool L_0 = VirtFuncInvoker2< bool, int32_t, bool >::Invoke(9 /* System.Boolean System.Threading.WaitHandle::WaitOne(System.Int32,System.Boolean) */, __this, (-1), (bool)0);
 		return L_0;
 	}
 }
@@ -33448,7 +33481,7 @@ extern "C" IL2CPP_METHOD_ATTR bool WaitHandle_WaitOne_m86F1422A0B09B944119508588
 {
 	{
 		int32_t L_0 = ___millisecondsTimeout0;
-		bool L_1 = VirtFuncInvoker2< bool, int32_t, bool >::Invoke(8 /* System.Boolean System.Threading.WaitHandle::WaitOne(System.Int32,System.Boolean) */, __this, L_0, (bool)0);
+		bool L_1 = VirtFuncInvoker2< bool, int32_t, bool >::Invoke(9 /* System.Boolean System.Threading.WaitHandle::WaitOne(System.Int32,System.Boolean) */, __this, L_0, (bool)0);
 		return L_1;
 	}
 }
@@ -33816,7 +33849,7 @@ extern "C" IL2CPP_METHOD_ATTR void WaitHandle_Close_m40287CC581A72F1CB4882656D4F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		VirtActionInvoker1< bool >::Invoke(12 /* System.Void System.Threading.WaitHandle::Dispose(System.Boolean) */, __this, (bool)1);
+		VirtActionInvoker1< bool >::Invoke(13 /* System.Void System.Threading.WaitHandle::Dispose(System.Boolean) */, __this, (bool)1);
 		IL2CPP_RUNTIME_CLASS_INIT(GC_tC1D7BD74E8F44ECCEF5CD2B5D84BFF9AAE02D01D_il2cpp_TypeInfo_var);
 		GC_SuppressFinalize_m037319A9B95A5BA437E806DE592802225EE5B425(__this, /*hidden argument*/NULL);
 		return;
@@ -33855,7 +33888,7 @@ extern "C" IL2CPP_METHOD_ATTR void WaitHandle_Dispose_m47D6F15A6D36EFBF147D238B7
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		VirtActionInvoker1< bool >::Invoke(12 /* System.Void System.Threading.WaitHandle::Dispose(System.Boolean) */, __this, (bool)1);
+		VirtActionInvoker1< bool >::Invoke(13 /* System.Void System.Threading.WaitHandle::Dispose(System.Boolean) */, __this, (bool)1);
 		IL2CPP_RUNTIME_CLASS_INIT(GC_tC1D7BD74E8F44ECCEF5CD2B5D84BFF9AAE02D01D_il2cpp_TypeInfo_var);
 		GC_SuppressFinalize_m037319A9B95A5BA437E806DE592802225EE5B425(__this, /*hidden argument*/NULL);
 		return;

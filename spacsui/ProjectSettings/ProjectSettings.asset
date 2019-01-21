@@ -570,11 +570,11 @@ PlayerSettings:
       CodeGeneration: False
       Contacts: False
       EnterpriseAuthentication: False
-      HumanInterfaceDevice: False
+      HumanInterfaceDevice: True
       InputInjectionBrokered: False
       InternetClient: False
       InternetClientServer: True
-      Location: False
+      Location: True
       LowLevelDevices: False
       Microphone: True
       MusicLibrary: False
@@ -585,13 +585,13 @@ PlayerSettings:
       PicturesLibrary: False
       PointOfService: False
       PrivateNetworkClientServer: True
-      Proximity: False
+      Proximity: True
       RecordedCallsFolder: False
       RemoteSystem: False
       RemovableStorage: False
       SharedUserCertificates: False
       SpatialPerception: True
-      SystemManagement: False
+      SystemManagement: True
       UserAccountInformation: False
       UserDataTasks: False
       UserNotificationListener: False

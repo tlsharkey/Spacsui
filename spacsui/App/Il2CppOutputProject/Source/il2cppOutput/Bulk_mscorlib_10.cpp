@@ -36782,7 +36782,7 @@ IL_0015:
 			EventWaitHandle_t7603BF1D3D30FE42DD07A450C8D09E2684DC4D98 * L_4 = ___waitEvent0;
 			int32_t L_5 = ___millisecondsTimeout2;
 			NullCheck(L_4);
-			bool L_6 = VirtFuncInvoker2< bool, int32_t, bool >::Invoke(8 /* System.Boolean System.Threading.WaitHandle::WaitOne(System.Int32,System.Boolean) */, L_4, L_5, (bool)0);
+			bool L_6 = VirtFuncInvoker2< bool, int32_t, bool >::Invoke(9 /* System.Boolean System.Threading.WaitHandle::WaitOne(System.Int32,System.Boolean) */, L_4, L_5, (bool)0);
 			if (L_6)
 			{
 				goto IL_0025;

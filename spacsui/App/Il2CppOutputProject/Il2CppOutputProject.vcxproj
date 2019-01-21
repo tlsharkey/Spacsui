@@ -57,6 +57,12 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_Assembly-CSharp_10.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_Assembly-CSharp_11.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_Assembly-CSharp_12.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_Assembly-CSharp_13.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_Assembly-CSharp_2.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_Assembly-CSharp_3.cpp">
@@ -168,6 +174,14 @@
     <ClCompile Include="Source\il2cppOutput\Bulk_Generics_50.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_Generics_51.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_Generics_52.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_Generics_53.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_Generics_54.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Bulk_Generics_55.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Bulk_Generics_6.cpp">
     </ClCompile>
@@ -447,6 +461,10 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers3.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers30.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers31.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers4.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppComCallableWrappers5.cpp">
@@ -554,6 +572,10 @@
     <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues_50Table.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues_51Table.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues_52Table.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues_53Table.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCompilerCalculateTypeValues_5Table.cpp">
     </ClCompile>

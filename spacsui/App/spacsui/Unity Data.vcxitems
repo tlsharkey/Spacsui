@@ -161,6 +161,10 @@
       <DeploymentContent>true</DeploymentContent>
       <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
     </None>
+    <None Include="$(MSBuildThisFileDirectory)MicStreamSelector.dll">
+      <DeploymentContent>true</DeploymentContent>
+      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
+    </None>
     <None Include="$(MSBuildThisFileDirectory)GpuTiming.dll">
       <DeploymentContent>true</DeploymentContent>
       <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
@@ -202,6 +206,10 @@
             <Delete Files="$(ProjectDir)AudioPluginMsHRTF.pdb" Condition="Exists('$(ProjectDir)AudioPluginMsHRTF.pdb')" />
             <Delete Files="$(ProjectDir)AudioPluginMsHRTF.dll.mdb" Condition="Exists('$(ProjectDir)AudioPluginMsHRTF.dll.mdb')" />
             <Copy SourceFiles="$(ProjectDir)Plugins\$(PlatformShortName)\AudioPluginMsHRTF.pdb" DestinationFiles="$(ProjectDir)AudioPluginMsHRTF.pdb" Condition="Exists('$(ProjectDir)Plugins\$(PlatformShortName)\AudioPluginMsHRTF.pdb')" />
+        <Copy SourceFiles="$(ProjectDir)Plugins\$(PlatformShortName)\MicStreamSelector.dll" DestinationFiles="$(ProjectDir)MicStreamSelector.dll" />
+            <Delete Files="$(ProjectDir)MicStreamSelector.pdb" Condition="Exists('$(ProjectDir)MicStreamSelector.pdb')" />
+            <Delete Files="$(ProjectDir)MicStreamSelector.dll.mdb" Condition="Exists('$(ProjectDir)MicStreamSelector.dll.mdb')" />
+            <Copy SourceFiles="$(ProjectDir)Plugins\$(PlatformShortName)\MicStreamSelector.pdb" DestinationFiles="$(ProjectDir)MicStreamSelector.pdb" Condition="Exists('$(ProjectDir)Plugins\$(PlatformShortName)\MicStreamSelector.pdb')" />
         <Copy SourceFiles="$(ProjectDir)Plugins\$(PlatformShortName)\GpuTiming.dll" DestinationFiles="$(ProjectDir)GpuTiming.dll" />
             <Delete Files="$(ProjectDir)GpuTiming.pdb" Condition="Exists('$(ProjectDir)GpuTiming.pdb')" />
             <Delete Files="$(ProjectDir)GpuTiming.dll.mdb" Condition="Exists('$(ProjectDir)GpuTiming.dll.mdb')" />

@@ -4469,6 +4469,16 @@ extern "C" IL2CPP_METHOD_ATTR void AnimatorControllerPlayable__cctor_m6FCC197F3B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Boolean UnityEngine.Animator::get_isInitialized()
+extern "C" IL2CPP_METHOD_ATTR bool Animator_get_isInitialized_mC4B380F4376B55D1D019C2A9650AA31C6090CA9F (Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A * __this, const RuntimeMethod* method)
+{
+	typedef bool (*Animator_get_isInitialized_mC4B380F4376B55D1D019C2A9650AA31C6090CA9F_ftn) (Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A *);
+	static Animator_get_isInitialized_mC4B380F4376B55D1D019C2A9650AA31C6090CA9F_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Animator_get_isInitialized_mC4B380F4376B55D1D019C2A9650AA31C6090CA9F_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animator::get_isInitialized()");
+	bool retVal = _il2cpp_icall_func(__this);
+	return retVal;
+}
 // System.Single UnityEngine.Animator::GetFloat(System.Int32)
 extern "C" IL2CPP_METHOD_ATTR float Animator_GetFloat_mD81DFC8E86940E023CF5512DC8E7003A5FF63260 (Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A * __this, int32_t ___id0, const RuntimeMethod* method)
 {

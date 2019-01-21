@@ -927,6 +927,7 @@ extern const RuntimeMethod* DateTime__ctor_m184FABF75B3C703A70200D760A7E43C60524
 extern const RuntimeMethod* DateTime__ctor_m399F434D85D918405F74C5B04BCBD8C1B410F10E_RuntimeMethod_var;
 extern const RuntimeMethod* DateTime__ctor_m6567CDEB97E6541CE4AF8ADDC617CFF419D5A58E_RuntimeMethod_var;
 extern const RuntimeMethod* DateTime__ctor_m8946C6F0EFB7933840C449A2C859B08101393A84_RuntimeMethod_var;
+extern const RuntimeMethod* DateTime__ctor_mC9FEFEECD786FDE2648567E114C71A4A468A65FE_RuntimeMethod_var;
 extern const RuntimeMethod* DateTime_op_Addition_m6CE7A79B6E219E67A75AB17545D1873529262282_RuntimeMethod_var;
 extern const RuntimeMethod* DateTime_op_Subtraction_m679BBE02927C8538BBDD10A514E655568246830B_RuntimeMethod_var;
 extern const RuntimeMethod* HashHelpers_GetPrime_m743D7006C2BCBADC1DC8CACF7C5B78C9F6B38297_RuntimeMethod_var;
@@ -1244,6 +1245,7 @@ extern const uint32_t DateTime_ToLongTimeString_m633B964A51A60AFD7C5EC9D8AD7DF81
 extern const uint32_t DateTime_ToOADate_mF1252C10D7EDC4EC5F0EEAE738530650D803B49A_MetadataUsageId;
 extern const uint32_t DateTime_ToShortDateString_m74551FF8672F5A4D088C80D2B983F39FED48242D_MetadataUsageId;
 extern const uint32_t DateTime_ToShortTimeString_m171DA0C1DB244AA21110CF513A21E9B17541C3C8_MetadataUsageId;
+extern const uint32_t DateTime_ToString_m203C5710CD7AB2F5F1B2D9DA1DFD45BB3774179A_MetadataUsageId;
 extern const uint32_t DateTime_ToString_m30D2730D4AB64F21D73E2037237150FC5B00F0C8_MetadataUsageId;
 extern const uint32_t DateTime_ToString_m9943D2AB36F33BA0A4CF44DAE32D5944E2561B1C_MetadataUsageId;
 extern const uint32_t DateTime_ToString_mBB245CB189C10659D35E8E273FB03E34EA1A7122_MetadataUsageId;
@@ -1257,6 +1259,7 @@ extern const uint32_t DateTime__ctor_m399F434D85D918405F74C5B04BCBD8C1B410F10E_M
 extern const uint32_t DateTime__ctor_m627486A7CFC2016C8A1646442155BE45A8062667_MetadataUsageId;
 extern const uint32_t DateTime__ctor_m6567CDEB97E6541CE4AF8ADDC617CFF419D5A58E_MetadataUsageId;
 extern const uint32_t DateTime__ctor_m8946C6F0EFB7933840C449A2C859B08101393A84_MetadataUsageId;
+extern const uint32_t DateTime__ctor_mC9FEFEECD786FDE2648567E114C71A4A468A65FE_MetadataUsageId;
 extern const uint32_t DateTime__ctor_mF4506D7FF3B64F7EC739A36667DC8BC089A6539A_MetadataUsageId;
 extern const uint32_t DateTime_get_Now_mB464D30F15C97069F92C1F910DCDDC3DFCC7F7D2_MetadataUsageId;
 extern const uint32_t DateTime_get_UtcNow_m171F52F4B3A213E4BAD7B78DC8E794A269DE38A1_MetadataUsageId;
@@ -14264,6 +14267,8 @@ extern "C" IL2CPP_METHOD_ATTR void DateTime__ctor_mF4506D7FF3B64F7EC739A36667DC8
 extern "C" IL2CPP_METHOD_ATTR int64_t DateTime_TimeToTicks_m38671AD5E9A1A1DE63AF5BAC980B0A0E8E67A5DB (int32_t ___hour0, int32_t ___minute1, int32_t ___second2, const RuntimeMethod* method);
 // System.Void System.DateTime::.ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
 extern "C" IL2CPP_METHOD_ATTR void DateTime__ctor_m627486A7CFC2016C8A1646442155BE45A8062667 (DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 * __this, int32_t ___year0, int32_t ___month1, int32_t ___day2, int32_t ___hour3, int32_t ___minute4, int32_t ___second5, const RuntimeMethod* method);
+// System.Void System.DateTime::.ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.DateTimeKind)
+extern "C" IL2CPP_METHOD_ATTR void DateTime__ctor_mC9FEFEECD786FDE2648567E114C71A4A468A65FE (DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 * __this, int32_t ___year0, int32_t ___month1, int32_t ___day2, int32_t ___hour3, int32_t ___minute4, int32_t ___second5, int32_t ___kind6, const RuntimeMethod* method);
 // System.Void System.DateTime::.ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
 extern "C" IL2CPP_METHOD_ATTR void DateTime__ctor_m6567CDEB97E6541CE4AF8ADDC617CFF419D5A58E (DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 * __this, int32_t ___year0, int32_t ___month1, int32_t ___day2, int32_t ___hour3, int32_t ___minute4, int32_t ___second5, int32_t ___millisecond6, const RuntimeMethod* method);
 // System.Object System.Runtime.Serialization.SerializationInfoEnumerator::get_Value()
@@ -14410,6 +14415,8 @@ extern "C" IL2CPP_METHOD_ATTR String_t* DateTime_ToShortDateString_m74551FF8672F
 extern "C" IL2CPP_METHOD_ATTR String_t* DateTime_ToShortTimeString_m171DA0C1DB244AA21110CF513A21E9B17541C3C8 (DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 * __this, const RuntimeMethod* method);
 // System.String System.DateTime::ToString()
 extern "C" IL2CPP_METHOD_ATTR String_t* DateTime_ToString_mBB245CB189C10659D35E8E273FB03E34EA1A7122 (DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 * __this, const RuntimeMethod* method);
+// System.String System.DateTime::ToString(System.String)
+extern "C" IL2CPP_METHOD_ATTR String_t* DateTime_ToString_m203C5710CD7AB2F5F1B2D9DA1DFD45BB3774179A (DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 * __this, String_t* ___format0, const RuntimeMethod* method);
 // System.String System.DateTime::ToString(System.IFormatProvider)
 extern "C" IL2CPP_METHOD_ATTR String_t* DateTime_ToString_m30D2730D4AB64F21D73E2037237150FC5B00F0C8 (DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 * __this, RuntimeObject* ___provider0, const RuntimeMethod* method);
 // System.String System.DateTime::ToString(System.String,System.IFormatProvider)
@@ -32600,6 +32607,62 @@ extern "C"  void DateTime__ctor_m627486A7CFC2016C8A1646442155BE45A8062667_Adjust
 	DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 * _thisAdjusted = reinterpret_cast<DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 *>(__this + 1);
 	DateTime__ctor_m627486A7CFC2016C8A1646442155BE45A8062667(_thisAdjusted, ___year0, ___month1, ___day2, ___hour3, ___minute4, ___second5, method);
 }
+// System.Void System.DateTime::.ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.DateTimeKind)
+extern "C" IL2CPP_METHOD_ATTR void DateTime__ctor_mC9FEFEECD786FDE2648567E114C71A4A468A65FE (DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 * __this, int32_t ___year0, int32_t ___month1, int32_t ___day2, int32_t ___hour3, int32_t ___minute4, int32_t ___second5, int32_t ___kind6, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (DateTime__ctor_mC9FEFEECD786FDE2648567E114C71A4A468A65FE_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int64_t V_0 = 0;
+	{
+		int32_t L_0 = ___kind6;
+		if ((((int32_t)L_0) < ((int32_t)0)))
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		int32_t L_1 = ___kind6;
+		if ((((int32_t)L_1) <= ((int32_t)2)))
+		{
+			goto IL_001f;
+		}
+	}
+
+IL_000a:
+	{
+		String_t* L_2 = Environment_GetResourceString_m2C75C2AF268F01E2BF34AD1C2E1352CF4BA51AD9(_stringLiteral82237410ED07589538EA563BE12E6D18D81CA295, /*hidden argument*/NULL);
+		ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1 * L_3 = (ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1 *)il2cpp_codegen_object_new(ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m26DC3463C6F3C98BF33EA39598DD2B32F0249CA8(L_3, L_2, _stringLiteral0EF25AE00F40C8471EE44B720036ABCC25E96CEE, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, NULL, DateTime__ctor_mC9FEFEECD786FDE2648567E114C71A4A468A65FE_RuntimeMethod_var);
+	}
+
+IL_001f:
+	{
+		int32_t L_4 = ___year0;
+		int32_t L_5 = ___month1;
+		int32_t L_6 = ___day2;
+		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132_il2cpp_TypeInfo_var);
+		int64_t L_7 = DateTime_DateToTicks_m8315FA4947393A7ABDB9A9905EE6B0F11ECC6A64(L_4, L_5, L_6, /*hidden argument*/NULL);
+		int32_t L_8 = ___hour3;
+		int32_t L_9 = ___minute4;
+		int32_t L_10 = ___second5;
+		int64_t L_11 = DateTime_TimeToTicks_m38671AD5E9A1A1DE63AF5BAC980B0A0E8E67A5DB(L_8, L_9, L_10, /*hidden argument*/NULL);
+		V_0 = ((int64_t)il2cpp_codegen_add((int64_t)L_7, (int64_t)L_11));
+		int64_t L_12 = V_0;
+		int32_t L_13 = ___kind6;
+		__this->set_dateData_44(((int64_t)((int64_t)L_12|(int64_t)((int64_t)((int64_t)(((int64_t)((int64_t)L_13)))<<(int32_t)((int32_t)62))))));
+		return;
+	}
+}
+extern "C"  void DateTime__ctor_mC9FEFEECD786FDE2648567E114C71A4A468A65FE_AdjustorThunk (RuntimeObject * __this, int32_t ___year0, int32_t ___month1, int32_t ___day2, int32_t ___hour3, int32_t ___minute4, int32_t ___second5, int32_t ___kind6, const RuntimeMethod* method)
+{
+	DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 * _thisAdjusted = reinterpret_cast<DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 *>(__this + 1);
+	DateTime__ctor_mC9FEFEECD786FDE2648567E114C71A4A468A65FE(_thisAdjusted, ___year0, ___month1, ___day2, ___hour3, ___minute4, ___second5, ___kind6, method);
+}
 // System.Void System.DateTime::.ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
 extern "C" IL2CPP_METHOD_ATTR void DateTime__ctor_m6567CDEB97E6541CE4AF8ADDC617CFF419D5A58E (DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 * __this, int32_t ___year0, int32_t ___month1, int32_t ___day2, int32_t ___hour3, int32_t ___minute4, int32_t ___second5, int32_t ___millisecond6, const RuntimeMethod* method)
 {
@@ -35160,6 +35223,29 @@ extern "C"  String_t* DateTime_ToString_mBB245CB189C10659D35E8E273FB03E34EA1A712
 {
 	DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 * _thisAdjusted = reinterpret_cast<DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 *>(__this + 1);
 	return DateTime_ToString_mBB245CB189C10659D35E8E273FB03E34EA1A7122(_thisAdjusted, method);
+}
+// System.String System.DateTime::ToString(System.String)
+extern "C" IL2CPP_METHOD_ATTR String_t* DateTime_ToString_m203C5710CD7AB2F5F1B2D9DA1DFD45BB3774179A (DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 * __this, String_t* ___format0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (DateTime_ToString_m203C5710CD7AB2F5F1B2D9DA1DFD45BB3774179A_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___format0;
+		IL2CPP_RUNTIME_CLASS_INIT(DateTimeFormatInfo_tF4BB3AA482C2F772D2A9022F78BF8727830FAF5F_il2cpp_TypeInfo_var);
+		DateTimeFormatInfo_tF4BB3AA482C2F772D2A9022F78BF8727830FAF5F * L_1 = DateTimeFormatInfo_get_CurrentInfo_m74E97DE51E5F8F803557FCDF11F041F200AB9C3F(/*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(DateTimeFormat_t3C1DB338DFB9FCD0D11332F29E5FD9DD79FEE6C8_il2cpp_TypeInfo_var);
+		String_t* L_2 = DateTimeFormat_Format_m3324809CE00998580E953F539E93153ADBB8447A((*(DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 *)__this), L_0, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+extern "C"  String_t* DateTime_ToString_m203C5710CD7AB2F5F1B2D9DA1DFD45BB3774179A_AdjustorThunk (RuntimeObject * __this, String_t* ___format0, const RuntimeMethod* method)
+{
+	DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 * _thisAdjusted = reinterpret_cast<DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 *>(__this + 1);
+	return DateTime_ToString_m203C5710CD7AB2F5F1B2D9DA1DFD45BB3774179A(_thisAdjusted, ___format0, method);
 }
 // System.String System.DateTime::ToString(System.IFormatProvider)
 extern "C" IL2CPP_METHOD_ATTR String_t* DateTime_ToString_m30D2730D4AB64F21D73E2037237150FC5B00F0C8 (DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132 * __this, RuntimeObject* ___provider0, const RuntimeMethod* method)

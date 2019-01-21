@@ -16591,7 +16591,7 @@ extern "C" IL2CPP_METHOD_ATTR void HashHelpers__cctor_m4893C061D6416AFC50C3AF637
 		Random_t18A28484F67EFA289C256F508A5C71D9E6DEE09F * L_0 = (Random_t18A28484F67EFA289C256F508A5C71D9E6DEE09F *)il2cpp_codegen_object_new(Random_t18A28484F67EFA289C256F508A5C71D9E6DEE09F_il2cpp_TypeInfo_var);
 		Random__ctor_mCD4B6E9DFD27A19F52FA441CD8CAEB687A9DD2F2(L_0, /*hidden argument*/NULL);
 		NullCheck(L_0);
-		int32_t L_1 = VirtFuncInvoker2< int32_t, int32_t, int32_t >::Invoke(5 /* System.Int32 System.Random::Next(System.Int32,System.Int32) */, L_0, ((int32_t)-2147483648LL), ((int32_t)2147483647LL));
+		int32_t L_1 = VirtFuncInvoker2< int32_t, int32_t, int32_t >::Invoke(6 /* System.Int32 System.Random::Next(System.Int32,System.Int32) */, L_0, ((int32_t)-2147483648LL), ((int32_t)2147483647LL));
 		((HashHelpers_tDC6BF33BEF3A798515BA62BA704DD83AEBFA9C33_StaticFields*)il2cpp_codegen_static_fields_for(HashHelpers_tDC6BF33BEF3A798515BA62BA704DD83AEBFA9C33_il2cpp_TypeInfo_var))->set_RandomSeed_0(L_1);
 		return;
 	}
@@ -22264,6 +22264,14 @@ IL_004e:
 		__this->set_inextp_4(L_22);
 		int32_t L_23 = V_0;
 		return L_23;
+	}
+}
+// System.Int32 System.Random::Next()
+extern "C" IL2CPP_METHOD_ATTR int32_t Random_Next_m6F786127C44FECF9C6AB822196BC4F9F31385565 (Random_t18A28484F67EFA289C256F508A5C71D9E6DEE09F * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = Random_InternalSample_mA3843DC92D371421662F385DD2CC4D76EBE18FFD(__this, /*hidden argument*/NULL);
+		return L_0;
 	}
 }
 // System.Double System.Random::GetSampleForLargeRange()

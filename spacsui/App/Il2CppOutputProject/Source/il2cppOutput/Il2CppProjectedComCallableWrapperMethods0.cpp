@@ -365,7 +365,6 @@ extern RuntimeClass* IReadOnlyList_1U5BU5D_t77BB38DB484D213CDC5B77783DF6F0D69E09
 extern RuntimeClass* IReadOnlyList_1_t01A3840E18EB701C30DC004301045ACAAA52761F_il2cpp_TypeInfo_var;
 extern RuntimeClass* IReadOnlyList_1_t08E46BD3E9D5A1326BFD24910EBA3119CE32E040_il2cpp_TypeInfo_var;
 extern RuntimeClass* IReadOnlyList_1_t0C3C362A7B5370488085812C57C85C9EC21D6547_il2cpp_TypeInfo_var;
-extern RuntimeClass* IReadOnlyList_1_t0D49C908B4406E8664CF86C3D2D17B14C223249B_il2cpp_TypeInfo_var;
 extern RuntimeClass* IReadOnlyList_1_t12282B1092F5B46295647DEFA6CEA4F0549BD278_il2cpp_TypeInfo_var;
 extern RuntimeClass* IReadOnlyList_1_t18DB6C1DC2F4C46877764EC34E3FBACDC8EEF664_il2cpp_TypeInfo_var;
 extern RuntimeClass* IReadOnlyList_1_t1A846F80E39FC3745D79DF72D9E6F2C2CE81C792_il2cpp_TypeInfo_var;
@@ -377,9 +376,10 @@ extern RuntimeClass* IReadOnlyList_1_t49BCEB7A1BC7796495A0E5E2167967F584D35574_i
 extern RuntimeClass* IReadOnlyList_1_t5F53D1BC30E2982B567CE0CAFC737415FAC8EE60_il2cpp_TypeInfo_var;
 extern RuntimeClass* IReadOnlyList_1_t65CC2EAD6BEA438BB9AB93C04245173C397FD82D_il2cpp_TypeInfo_var;
 extern RuntimeClass* IReadOnlyList_1_t691AE4DCE02ABC468FB7A43F2A21B574611F2631_il2cpp_TypeInfo_var;
-extern RuntimeClass* IReadOnlyList_1_t6BCFDCB303FDDC4BA2C8E747D38F9046849B0366_il2cpp_TypeInfo_var;
+extern RuntimeClass* IReadOnlyList_1_t896A598FEFD69791D1B0E4A2E6F8A5E5C022359E_il2cpp_TypeInfo_var;
 extern RuntimeClass* IReadOnlyList_1_t9DF0B6C72AD539717140E978C84E6853C4E9D77A_il2cpp_TypeInfo_var;
 extern RuntimeClass* IReadOnlyList_1_tADA9A913D82971D7154C7E4750E8FF3762B94E2D_il2cpp_TypeInfo_var;
+extern RuntimeClass* IReadOnlyList_1_tAF5E42B16D478C8A555EA457467B27FC04BF12E4_il2cpp_TypeInfo_var;
 extern RuntimeClass* IReadOnlyList_1_tB31032040CD4C91524FDC5CFCE08076C5174AB91_il2cpp_TypeInfo_var;
 extern RuntimeClass* IReadOnlyList_1_tBE473D6B301E7ADB3C93F6CAD5DE287CFF2C513B_il2cpp_TypeInfo_var;
 extern RuntimeClass* IReadOnlyList_1_tE81E1489F9663A3FFB16117EBB97C07D91EA7557_il2cpp_TypeInfo_var;
@@ -9386,7 +9386,7 @@ il2cpp_hresult_t IVector_1_GetView_mEFB5060E04608CEC1987DC0F432933FFFED23903_Com
 	try
 	{
 		RuntimeObject* __thisValue = __this;
-		if (IsInst(__thisValue, IReadOnlyList_1_t0D49C908B4406E8664CF86C3D2D17B14C223249B_il2cpp_TypeInfo_var))
+		if (IsInst(__thisValue, IReadOnlyList_1_tAF5E42B16D478C8A555EA457467B27FC04BF12E4_il2cpp_TypeInfo_var))
 		{
 			returnValue = __thisValue;
 		}
@@ -10448,7 +10448,7 @@ il2cpp_hresult_t IVectorView_1_GetAt_m681FCCFB684A20BFD510C4CD11EF62E7ABCFBA7C_C
 	{
 		try
 		{
-			returnValue = InterfaceFuncInvoker1< String_t*, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.String>::get_Item(System.Int32) */, IReadOnlyList_1_t0D49C908B4406E8664CF86C3D2D17B14C223249B_il2cpp_TypeInfo_var, __this, ___index0);
+			returnValue = InterfaceFuncInvoker1< String_t*, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.String>::get_Item(System.Int32) */, IReadOnlyList_1_tAF5E42B16D478C8A555EA457467B27FC04BF12E4_il2cpp_TypeInfo_var, __this, ___index0);
 		}
 		catch (const Il2CppExceptionWrapper& ex)
 		{
@@ -10552,7 +10552,7 @@ il2cpp_hresult_t IVectorView_1_IndexOf_m6764D24534FC1DB0445B32D41DB462ECF6D23FA7
 		int elementsInCollection = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<System.String>::get_Count() */, IReadOnlyCollection_1_tD73D1FCB9240707661B82B07434ED4BF07D263B8_il2cpp_TypeInfo_var, __this);
 		for (int i = 0; i < elementsInCollection; i++)
 		{
-			String_t* item = InterfaceFuncInvoker1< String_t*, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.String>::get_Item(System.Int32) */, IReadOnlyList_1_t0D49C908B4406E8664CF86C3D2D17B14C223249B_il2cpp_TypeInfo_var, __this, i);
+			String_t* item = InterfaceFuncInvoker1< String_t*, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.String>::get_Item(System.Int32) */, IReadOnlyList_1_tAF5E42B16D478C8A555EA457467B27FC04BF12E4_il2cpp_TypeInfo_var, __this, i);
 			if (String_Equals_m90EB651A751C3444BADBBD5401109CE05B3E1CFB(item, ____value0_unmarshaled, NULL))
 			{
 				____index1_empty = static_cast<uint32_t>(i);
@@ -10611,7 +10611,7 @@ il2cpp_hresult_t IVectorView_1_GetMany_mD450EE275C4B76270023297AB0FE06CAFA60E4C9
 			returnValue = std::min(___items1ArraySize, elementsInCollection - ___startIndex0);
 			for (uint32_t i = 0; i < returnValue; i++)
 			{
-				String_t* itemManaged = InterfaceFuncInvoker1< String_t*, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.String>::get_Item(System.Int32) */, IReadOnlyList_1_t0D49C908B4406E8664CF86C3D2D17B14C223249B_il2cpp_TypeInfo_var, __this, i + ___startIndex0);
+				String_t* itemManaged = InterfaceFuncInvoker1< String_t*, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.String>::get_Item(System.Int32) */, IReadOnlyList_1_tAF5E42B16D478C8A555EA457467B27FC04BF12E4_il2cpp_TypeInfo_var, __this, i + ___startIndex0);
 				if (itemManaged == NULL)
 				{
 					IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_argument_null_exception("itemManaged"), NULL, NULL);
@@ -10901,7 +10901,7 @@ il2cpp_hresult_t IVectorView_1_GetAt_mC88F765FAC31C2BDC24E09D2FB29F68925BDC94F_C
 	{
 		try
 		{
-			returnValue = InterfaceFuncInvoker1< RuntimeObject*, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.Collections.Generic.IEnumerable`1<System.Char>>::get_Item(System.Int32) */, IReadOnlyList_1_t6BCFDCB303FDDC4BA2C8E747D38F9046849B0366_il2cpp_TypeInfo_var, __this, ___index0);
+			returnValue = InterfaceFuncInvoker1< RuntimeObject*, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.Collections.Generic.IEnumerable`1<System.Char>>::get_Item(System.Int32) */, IReadOnlyList_1_t896A598FEFD69791D1B0E4A2E6F8A5E5C022359E_il2cpp_TypeInfo_var, __this, ___index0);
 		}
 		catch (const Il2CppExceptionWrapper& ex)
 		{
@@ -11023,7 +11023,7 @@ il2cpp_hresult_t IVectorView_1_IndexOf_m9C78ECC3CDA2BC7DEAD973EDD9347398E5841C62
 		int elementsInCollection = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<System.Collections.Generic.IEnumerable`1<System.Char>>::get_Count() */, IReadOnlyCollection_1_tBE4A51F9ACC314763C047A6E6CF15DCCA7A3F264_il2cpp_TypeInfo_var, __this);
 		for (int i = 0; i < elementsInCollection; i++)
 		{
-			RuntimeObject* item = InterfaceFuncInvoker1< RuntimeObject*, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.Collections.Generic.IEnumerable`1<System.Char>>::get_Item(System.Int32) */, IReadOnlyList_1_t6BCFDCB303FDDC4BA2C8E747D38F9046849B0366_il2cpp_TypeInfo_var, __this, i);
+			RuntimeObject* item = InterfaceFuncInvoker1< RuntimeObject*, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.Collections.Generic.IEnumerable`1<System.Char>>::get_Item(System.Int32) */, IReadOnlyList_1_t896A598FEFD69791D1B0E4A2E6F8A5E5C022359E_il2cpp_TypeInfo_var, __this, i);
 			if (VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, item, ____value0_unmarshaled))
 			{
 				____index1_empty = static_cast<uint32_t>(i);
@@ -11082,7 +11082,7 @@ il2cpp_hresult_t IVectorView_1_GetMany_m56996F212F1AD05A82393E417D4F38B014222411
 			returnValue = std::min(___items1ArraySize, elementsInCollection - ___startIndex0);
 			for (uint32_t i = 0; i < returnValue; i++)
 			{
-				RuntimeObject* itemManaged = InterfaceFuncInvoker1< RuntimeObject*, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.Collections.Generic.IEnumerable`1<System.Char>>::get_Item(System.Int32) */, IReadOnlyList_1_t6BCFDCB303FDDC4BA2C8E747D38F9046849B0366_il2cpp_TypeInfo_var, __this, i + ___startIndex0);
+				RuntimeObject* itemManaged = InterfaceFuncInvoker1< RuntimeObject*, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.Collections.Generic.IEnumerable`1<System.Char>>::get_Item(System.Int32) */, IReadOnlyList_1_t896A598FEFD69791D1B0E4A2E6F8A5E5C022359E_il2cpp_TypeInfo_var, __this, i + ___startIndex0);
 				if (itemManaged != NULL)
 				{
 					if (il2cpp_codegen_is_import_or_windows_runtime(itemManaged))
@@ -12650,7 +12650,7 @@ il2cpp_hresult_t IVector_1_GetView_mB96B5FBFFAC7FBF9E74B3544C25B327E00995741_Com
 	try
 	{
 		RuntimeObject* __thisValue = __this;
-		if (IsInst(__thisValue, IReadOnlyList_1_t6BCFDCB303FDDC4BA2C8E747D38F9046849B0366_il2cpp_TypeInfo_var))
+		if (IsInst(__thisValue, IReadOnlyList_1_t896A598FEFD69791D1B0E4A2E6F8A5E5C022359E_il2cpp_TypeInfo_var))
 		{
 			returnValue = __thisValue;
 		}

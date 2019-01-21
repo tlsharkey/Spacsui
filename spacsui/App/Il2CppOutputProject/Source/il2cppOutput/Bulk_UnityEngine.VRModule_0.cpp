@@ -7266,10 +7266,16 @@ extern "C" IL2CPP_METHOD_ATTR void InteractionSourceLostEventArgs_set_state_m962
 extern "C" IL2CPP_METHOD_ATTR InteractionSourceState_t41A6FEEA413909D5D94BF48BC907FE5DBD162250  InteractionSourceLostEventArgs_get_state_m166EE2D5F8E5740573061893A34567D3B1CCFABC (InteractionSourceLostEventArgs_t1922B08265BAB2D8980B734D0A89C8705CCC40AC * __this, const RuntimeMethod* method);
 // System.Boolean UnityEngine.XR.WSA.Input.InteractionSourcePose::TryGetPosition(UnityEngine.Vector3&,UnityEngine.XR.WSA.Input.InteractionSourceNode)
 extern "C" IL2CPP_METHOD_ATTR bool InteractionSourcePose_TryGetPosition_m8097C4F7E532CFEF16C1209ECBD726CD2383A2E1 (InteractionSourcePose_t249CD43F634426269571F0E4689428ACC8C54F73 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___position0, int32_t ___node1, const RuntimeMethod* method);
+// System.Boolean UnityEngine.XR.WSA.Input.InteractionSourcePose::TryGetPosition(UnityEngine.Vector3&)
+extern "C" IL2CPP_METHOD_ATTR bool InteractionSourcePose_TryGetPosition_m3A15D0CA3302B8AFD9980AD7FBECB00331E7EA95 (InteractionSourcePose_t249CD43F634426269571F0E4689428ACC8C54F73 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___position0, const RuntimeMethod* method);
 // System.Boolean UnityEngine.XR.WSA.Input.InteractionSourcePose::TryGetRotation(UnityEngine.Quaternion&,UnityEngine.XR.WSA.Input.InteractionSourceNode)
 extern "C" IL2CPP_METHOD_ATTR bool InteractionSourcePose_TryGetRotation_m7FBD558BBB19BFC922164C573B69FFCE2B0B2502 (InteractionSourcePose_t249CD43F634426269571F0E4689428ACC8C54F73 * __this, Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357 * ___rotation0, int32_t ___node1, const RuntimeMethod* method);
 // System.Boolean UnityEngine.XR.WSA.Input.InteractionSourcePose::TryGetForward(UnityEngine.Vector3&,UnityEngine.XR.WSA.Input.InteractionSourceNode)
 extern "C" IL2CPP_METHOD_ATTR bool InteractionSourcePose_TryGetForward_m078E2E09B96C40401D68328EBE2FF8D9CA1D3EB6 (InteractionSourcePose_t249CD43F634426269571F0E4689428ACC8C54F73 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___forward0, int32_t ___node1, const RuntimeMethod* method);
+// System.Boolean UnityEngine.XR.WSA.Input.InteractionSourcePose::TryGetVelocity(UnityEngine.Vector3&)
+extern "C" IL2CPP_METHOD_ATTR bool InteractionSourcePose_TryGetVelocity_mCEF561CD9C3E56E6DCCF6199848F4CB2880A55F3 (InteractionSourcePose_t249CD43F634426269571F0E4689428ACC8C54F73 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___velocity0, const RuntimeMethod* method);
+// System.Boolean UnityEngine.XR.WSA.Input.InteractionSourcePose::TryGetAngularVelocity(UnityEngine.Vector3&)
+extern "C" IL2CPP_METHOD_ATTR bool InteractionSourcePose_TryGetAngularVelocity_m7BD7D3F6AC10A4BC566795C77AAC5E1231CDCC5C (InteractionSourcePose_t249CD43F634426269571F0E4689428ACC8C54F73 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___angularVelocity0, const RuntimeMethod* method);
 // System.Void UnityEngine.XR.WSA.Input.InteractionSourcePressedEventArgs::set_state(UnityEngine.XR.WSA.Input.InteractionSourceState)
 extern "C" IL2CPP_METHOD_ATTR void InteractionSourcePressedEventArgs_set_state_mE9F1061B3EB95D4C9C435A9B29B657B0D4F73E08 (InteractionSourcePressedEventArgs_tA2188AAAB8CB2AA059C55E45F2FD09ED3725EA5B * __this, InteractionSourceState_t41A6FEEA413909D5D94BF48BC907FE5DBD162250  ___value0, const RuntimeMethod* method);
 // System.Void UnityEngine.XR.WSA.Input.InteractionSourcePressedEventArgs::set_pressType(UnityEngine.XR.WSA.Input.InteractionSourcePressType)
@@ -7511,6 +7517,8 @@ inline void Action_1_Invoke_m6328F763431ED2ACDDB6ED8F0FDEA6194403E79F (Action_1_
 {
 	((  void (*) (Action_1_t32A9EECF5D4397CC1B9A7C7079870875411B06D0 *, String_t*, const RuntimeMethod*))Action_1_Invoke_mB86FC1B303E77C41ED0E94FC3592A9CF8DA571D5_gshared)(__this, p0, method);
 }
+// System.Single UnityEngine.XR.XRSettings::get_renderViewportScaleInternal()
+extern "C" IL2CPP_METHOD_ATTR float XRSettings_get_renderViewportScaleInternal_m68CF4633C56407C080DD0930AEAC9286AAA304F1 (const RuntimeMethod* method);
 // System.Void System.ArgumentOutOfRangeException::.ctor(System.String,System.String)
 extern "C" IL2CPP_METHOD_ATTR void ArgumentOutOfRangeException__ctor_m300CE4D04A068C209FD858101AC361C1B600B5AE (ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA * __this, String_t* p0, String_t* p1, const RuntimeMethod* method);
 // System.Void UnityEngine.XR.XRSettings::set_renderViewportScaleInternal(System.Single)
@@ -14245,6 +14253,28 @@ extern "C"  void InteractionSourceLostEventArgs_set_state_m962283240DCDBB2FB9798
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Boolean UnityEngine.XR.WSA.Input.InteractionSourcePose::TryGetPosition(UnityEngine.Vector3&)
+extern "C" IL2CPP_METHOD_ATTR bool InteractionSourcePose_TryGetPosition_m3A15D0CA3302B8AFD9980AD7FBECB00331E7EA95 (InteractionSourcePose_t249CD43F634426269571F0E4689428ACC8C54F73 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___position0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	{
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * L_0 = ___position0;
+		bool L_1 = InteractionSourcePose_TryGetPosition_m8097C4F7E532CFEF16C1209ECBD726CD2383A2E1((InteractionSourcePose_t249CD43F634426269571F0E4689428ACC8C54F73 *)__this, (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)L_0, 0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		bool L_2 = V_0;
+		return L_2;
+	}
+}
+extern "C"  bool InteractionSourcePose_TryGetPosition_m3A15D0CA3302B8AFD9980AD7FBECB00331E7EA95_AdjustorThunk (RuntimeObject * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___position0, const RuntimeMethod* method)
+{
+	InteractionSourcePose_t249CD43F634426269571F0E4689428ACC8C54F73 * _thisAdjusted = reinterpret_cast<InteractionSourcePose_t249CD43F634426269571F0E4689428ACC8C54F73 *>(__this + 1);
+	return InteractionSourcePose_TryGetPosition_m3A15D0CA3302B8AFD9980AD7FBECB00331E7EA95(_thisAdjusted, ___position0, method);
+}
 // System.Boolean UnityEngine.XR.WSA.Input.InteractionSourcePose::TryGetPosition(UnityEngine.Vector3&,UnityEngine.XR.WSA.Input.InteractionSourceNode)
 extern "C" IL2CPP_METHOD_ATTR bool InteractionSourcePose_TryGetPosition_m8097C4F7E532CFEF16C1209ECBD726CD2383A2E1 (InteractionSourcePose_t249CD43F634426269571F0E4689428ACC8C54F73 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___position0, int32_t ___node1, const RuntimeMethod* method)
 {
@@ -14366,6 +14396,54 @@ extern "C"  bool InteractionSourcePose_TryGetForward_m078E2E09B96C40401D68328EBE
 {
 	InteractionSourcePose_t249CD43F634426269571F0E4689428ACC8C54F73 * _thisAdjusted = reinterpret_cast<InteractionSourcePose_t249CD43F634426269571F0E4689428ACC8C54F73 *>(__this + 1);
 	return InteractionSourcePose_TryGetForward_m078E2E09B96C40401D68328EBE2FF8D9CA1D3EB6(_thisAdjusted, ___forward0, ___node1, method);
+}
+// System.Boolean UnityEngine.XR.WSA.Input.InteractionSourcePose::TryGetVelocity(UnityEngine.Vector3&)
+extern "C" IL2CPP_METHOD_ATTR bool InteractionSourcePose_TryGetVelocity_mCEF561CD9C3E56E6DCCF6199848F4CB2880A55F3 (InteractionSourcePose_t249CD43F634426269571F0E4689428ACC8C54F73 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___velocity0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	{
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * L_0 = ___velocity0;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_1 = __this->get_m_Velocity_4();
+		*(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)L_0 = L_1;
+		int32_t L_2 = __this->get_m_Flags_7();
+		V_0 = (bool)((((int32_t)((((int32_t)((int32_t)((int32_t)L_2&(int32_t)((int32_t)16)))) == ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_0022;
+	}
+
+IL_0022:
+	{
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+extern "C"  bool InteractionSourcePose_TryGetVelocity_mCEF561CD9C3E56E6DCCF6199848F4CB2880A55F3_AdjustorThunk (RuntimeObject * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___velocity0, const RuntimeMethod* method)
+{
+	InteractionSourcePose_t249CD43F634426269571F0E4689428ACC8C54F73 * _thisAdjusted = reinterpret_cast<InteractionSourcePose_t249CD43F634426269571F0E4689428ACC8C54F73 *>(__this + 1);
+	return InteractionSourcePose_TryGetVelocity_mCEF561CD9C3E56E6DCCF6199848F4CB2880A55F3(_thisAdjusted, ___velocity0, method);
+}
+// System.Boolean UnityEngine.XR.WSA.Input.InteractionSourcePose::TryGetAngularVelocity(UnityEngine.Vector3&)
+extern "C" IL2CPP_METHOD_ATTR bool InteractionSourcePose_TryGetAngularVelocity_m7BD7D3F6AC10A4BC566795C77AAC5E1231CDCC5C (InteractionSourcePose_t249CD43F634426269571F0E4689428ACC8C54F73 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___angularVelocity0, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	{
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * L_0 = ___angularVelocity0;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_1 = __this->get_m_AngularVelocity_5();
+		*(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)L_0 = L_1;
+		int32_t L_2 = __this->get_m_Flags_7();
+		V_0 = (bool)((((int32_t)((((int32_t)((int32_t)((int32_t)L_2&(int32_t)((int32_t)32)))) == ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_0022;
+	}
+
+IL_0022:
+	{
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+extern "C"  bool InteractionSourcePose_TryGetAngularVelocity_m7BD7D3F6AC10A4BC566795C77AAC5E1231CDCC5C_AdjustorThunk (RuntimeObject * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * ___angularVelocity0, const RuntimeMethod* method)
+{
+	InteractionSourcePose_t249CD43F634426269571F0E4689428ACC8C54F73 * _thisAdjusted = reinterpret_cast<InteractionSourcePose_t249CD43F634426269571F0E4689428ACC8C54F73 *>(__this + 1);
+	return InteractionSourcePose_TryGetAngularVelocity_m7BD7D3F6AC10A4BC566795C77AAC5E1231CDCC5C(_thisAdjusted, ___angularVelocity0, method);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -21705,6 +21783,22 @@ extern "C" IL2CPP_METHOD_ATTR bool XRSettings_get_enabled_m74A0B484E1B6D7187A34E
 	bool retVal = _il2cpp_icall_func();
 	return retVal;
 }
+// System.Single UnityEngine.XR.XRSettings::get_renderViewportScale()
+extern "C" IL2CPP_METHOD_ATTR float XRSettings_get_renderViewportScale_mAD4CE67ED8318B9D26CA9B092EBC592C1E38AE59 (const RuntimeMethod* method)
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = XRSettings_get_renderViewportScaleInternal_m68CF4633C56407C080DD0930AEAC9286AAA304F1(/*hidden argument*/NULL);
+		V_0 = L_0;
+		goto IL_000c;
+	}
+
+IL_000c:
+	{
+		float L_1 = V_0;
+		return L_1;
+	}
+}
 // System.Void UnityEngine.XR.XRSettings::set_renderViewportScale(System.Single)
 extern "C" IL2CPP_METHOD_ATTR void XRSettings_set_renderViewportScale_mA529C7437A54660C6773267061D571EFB4F4B35D (float ___value0, const RuntimeMethod* method)
 {
@@ -21742,6 +21836,16 @@ IL_0027:
 		XRSettings_set_renderViewportScaleInternal_m30C4242281864551E8A995B7CF5AFFD8650729EF(L_3, /*hidden argument*/NULL);
 		return;
 	}
+}
+// System.Single UnityEngine.XR.XRSettings::get_renderViewportScaleInternal()
+extern "C" IL2CPP_METHOD_ATTR float XRSettings_get_renderViewportScaleInternal_m68CF4633C56407C080DD0930AEAC9286AAA304F1 (const RuntimeMethod* method)
+{
+	typedef float (*XRSettings_get_renderViewportScaleInternal_m68CF4633C56407C080DD0930AEAC9286AAA304F1_ftn) ();
+	static XRSettings_get_renderViewportScaleInternal_m68CF4633C56407C080DD0930AEAC9286AAA304F1_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (XRSettings_get_renderViewportScaleInternal_m68CF4633C56407C080DD0930AEAC9286AAA304F1_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.XRSettings::get_renderViewportScaleInternal()");
+	float retVal = _il2cpp_icall_func();
+	return retVal;
 }
 // System.Void UnityEngine.XR.XRSettings::set_renderViewportScaleInternal(System.Single)
 extern "C" IL2CPP_METHOD_ATTR void XRSettings_set_renderViewportScaleInternal_m30C4242281864551E8A995B7CF5AFFD8650729EF (float ___value0, const RuntimeMethod* method)

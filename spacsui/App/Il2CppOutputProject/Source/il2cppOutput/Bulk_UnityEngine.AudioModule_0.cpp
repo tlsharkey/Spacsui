@@ -6313,6 +6313,16 @@ extern "C" IL2CPP_METHOD_ATTR void AudioLowPassFilter_set_cutoffFrequency_m8F9D8
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Int32 UnityEngine.AudioSettings::get_outputSampleRate()
+extern "C" IL2CPP_METHOD_ATTR int32_t AudioSettings_get_outputSampleRate_mA9092240D8A06109EA34644BD7FB239483F9A5F9 (const RuntimeMethod* method)
+{
+	typedef int32_t (*AudioSettings_get_outputSampleRate_mA9092240D8A06109EA34644BD7FB239483F9A5F9_ftn) ();
+	static AudioSettings_get_outputSampleRate_mA9092240D8A06109EA34644BD7FB239483F9A5F9_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (AudioSettings_get_outputSampleRate_mA9092240D8A06109EA34644BD7FB239483F9A5F9_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AudioSettings::get_outputSampleRate()");
+	int32_t retVal = _il2cpp_icall_func();
+	return retVal;
+}
 // System.String UnityEngine.AudioSettings::GetSpatializerPluginName()
 extern "C" IL2CPP_METHOD_ATTR String_t* AudioSettings_GetSpatializerPluginName_mB972ACF5EF94BF57E3C59B0237B7722345896ACC (const RuntimeMethod* method)
 {

@@ -20619,7 +20619,7 @@ extern "C" IL2CPP_METHOD_ATTR Socket_t47148BFA7740C9C45A69F2F3722F734B9DCA45D8 *
 		NullCheck(L_4);
 		WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6 * L_5 = IOAsyncResult_get_AsyncWaitHandle_mBB8E187CEE0D781E6CC1C0E4576A82D02936B9C5(L_4, /*hidden argument*/NULL);
 		NullCheck(L_5);
-		VirtFuncInvoker0< bool >::Invoke(9 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_5);
+		VirtFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_5);
 	}
 
 IL_002c:
@@ -21123,7 +21123,7 @@ extern "C" IL2CPP_METHOD_ATTR void Socket_EndConnect_m0CFDCA9629EAF8E764A7EB9D61
 		NullCheck(L_4);
 		WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6 * L_5 = IOAsyncResult_get_AsyncWaitHandle_mBB8E187CEE0D781E6CC1C0E4576A82D02936B9C5(L_4, /*hidden argument*/NULL);
 		NullCheck(L_5);
-		VirtFuncInvoker0< bool >::Invoke(9 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_5);
+		VirtFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_5);
 	}
 
 IL_002c:
@@ -21276,7 +21276,7 @@ extern "C" IL2CPP_METHOD_ATTR void Socket_EndDisconnect_m3CA2C23A595DAB49DB71A18
 		NullCheck(L_4);
 		WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6 * L_5 = IOAsyncResult_get_AsyncWaitHandle_mBB8E187CEE0D781E6CC1C0E4576A82D02936B9C5(L_4, /*hidden argument*/NULL);
 		NullCheck(L_5);
-		VirtFuncInvoker0< bool >::Invoke(9 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_5);
+		VirtFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_5);
 	}
 
 IL_002c:
@@ -21814,7 +21814,7 @@ extern "C" IL2CPP_METHOD_ATTR int32_t Socket_EndReceive_m76672177BFAD926BA214D66
 		NullCheck(L_4);
 		WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6 * L_5 = IOAsyncResult_get_AsyncWaitHandle_mBB8E187CEE0D781E6CC1C0E4576A82D02936B9C5(L_4, /*hidden argument*/NULL);
 		NullCheck(L_5);
-		VirtFuncInvoker0< bool >::Invoke(9 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_5);
+		VirtFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_5);
 	}
 
 IL_002c:
@@ -22202,7 +22202,7 @@ IL_0015:
 		NullCheck(L_7);
 		WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6 * L_8 = IOAsyncResult_get_AsyncWaitHandle_mBB8E187CEE0D781E6CC1C0E4576A82D02936B9C5(L_7, /*hidden argument*/NULL);
 		NullCheck(L_8);
-		VirtFuncInvoker0< bool >::Invoke(9 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_8);
+		VirtFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_8);
 	}
 
 IL_003b:
@@ -22633,7 +22633,7 @@ extern "C" IL2CPP_METHOD_ATTR int32_t Socket_EndSend_m58F48E67A449034B31B52F7EF2
 		NullCheck(L_4);
 		WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6 * L_5 = IOAsyncResult_get_AsyncWaitHandle_mBB8E187CEE0D781E6CC1C0E4576A82D02936B9C5(L_4, /*hidden argument*/NULL);
 		NullCheck(L_5);
-		VirtFuncInvoker0< bool >::Invoke(9 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_5);
+		VirtFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_5);
 	}
 
 IL_002c:
@@ -22789,7 +22789,7 @@ extern "C" IL2CPP_METHOD_ATTR int32_t Socket_EndSendTo_m8A51FA7E8F6D65435DA47F1D
 		NullCheck(L_4);
 		WaitHandle_tFD46B5B45A6BB296EA3A104C91DF2A7C03C10AC6 * L_5 = IOAsyncResult_get_AsyncWaitHandle_mBB8E187CEE0D781E6CC1C0E4576A82D02936B9C5(L_4, /*hidden argument*/NULL);
 		NullCheck(L_5);
-		VirtFuncInvoker0< bool >::Invoke(9 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_5);
+		VirtFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_5);
 	}
 
 IL_002c:
