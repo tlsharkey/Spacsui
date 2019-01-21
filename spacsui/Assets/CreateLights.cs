@@ -48,7 +48,7 @@ public class CreateLights : MonoBehaviour
                 // Get Each Surface's child spheres and reset their scales
                 for (int j = surface.childCount-1; j >= 0; j--)
                 {
-                    Vector3 newScale = new Vector3(0.1f / scale.x, 0.1f / scale.y, 0.1f / scale.z);
+                    Vector3 newScale = new Vector3(0.01f / scale.x, 0.01f / scale.y, 0.01f / scale.z);
                     surface.GetChild(j).localScale = newScale;
 
                     surface.GetChild(j).Translate(rand.Next(-100,100)/100.0f, rand.Next(-100,100)/100.0f, 0.5f); // sink into wall

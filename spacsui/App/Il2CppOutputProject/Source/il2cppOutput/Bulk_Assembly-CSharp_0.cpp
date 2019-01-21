@@ -21269,14 +21269,14 @@ IL_0038:
 
 IL_0062:
 	{
-		// Vector3 newScale = new Vector3(0.1f / scale.x, 0.1f / scale.y, 0.1f / scale.z);
+		// Vector3 newScale = new Vector3(0.01f / scale.x, 0.01f / scale.y, 0.01f / scale.z);
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_15 = V_3;
 		float L_16 = L_15.get_x_2();
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_17 = V_3;
 		float L_18 = L_17.get_y_3();
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_19 = V_3;
 		float L_20 = L_19.get_z_4();
-		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&V_5), ((float)((float)(0.1f)/(float)L_16)), ((float)((float)(0.1f)/(float)L_18)), ((float)((float)(0.1f)/(float)L_20)), /*hidden argument*/NULL);
+		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&V_5), ((float)((float)(0.01f)/(float)L_16)), ((float)((float)(0.01f)/(float)L_18)), ((float)((float)(0.01f)/(float)L_20)), /*hidden argument*/NULL);
 		// surface.GetChild(j).localScale = newScale;
 		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_21 = V_2;
 		int32_t L_22 = V_4;
