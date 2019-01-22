@@ -12,7 +12,7 @@ public class CreateLights : MonoBehaviour
     public Material LightMaterial;
 
     private List<GameObject> Particles = new List<GameObject>();
-    private Vector3 ConvergencePoint = new Vector3(0, 3, 0);
+    private Vector3 ConvergencePoint = new Vector3(0, 5, 0);
     private System.Random rand;
 
     private List<Vector3> OriginalPositions = new List<Vector3>();
