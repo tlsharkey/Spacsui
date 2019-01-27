@@ -218,6 +218,8 @@ struct WorldAnchor_tD6275232D14415769601A3BD6AE1E7D5622F96EE;
 struct OnTrackingChangedDelegate_t213BE1DC543541B52A31539ACEA406782B1DB253;
 // UnityEngine.XR.WSA.WorldAnchor[]
 struct WorldAnchorU5BU5D_t8FF7D9A45565A11A23D48201681989EF6B4199FB;
+// spin
+struct spin_t319505854A50BDE3DB1240861AE7BA26B8727A5A;
 
 extern RuntimeClass* ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var;
 extern RuntimeClass* Boolean_tB53F6830F670160873277339AA58F15CAED4399C_il2cpp_TypeInfo_var;
@@ -385,6 +387,8 @@ extern const uint32_t WorldAnchorManager_SaveAnchor_m15FA771DD583BC85FB69839AE50
 extern const uint32_t WorldAnchorManager_Start_m8A76C35031789B4D86F9DDF55884B7B7F7A385DE_MetadataUsageId;
 extern const uint32_t WorldAnchorManager_Update_m9B4D43FCE7F2E8C6EF02EAE14745811AA916E0C0_MetadataUsageId;
 extern const uint32_t WorldAnchorManager__ctor_m6B8AD5306C7BFABD5AE6FE0FD4AF03D75459868B_MetadataUsageId;
+extern const uint32_t spin_Start_m5902AD81BBED5CA6CAF7C7C91396F14D52749646_MetadataUsageId;
+extern const uint32_t spin_Update_m8EBE036D4F2824C8D802E0408EC9A30780674CAD_MetadataUsageId;
 struct Exception_t_marshaled_com;
 struct Exception_t_marshaled_pinvoke;
 
@@ -4203,6 +4207,46 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // VOLUMECONTROLLER_T43F89D097673271E0A0C54E8A302FBDDE5CB68F6_H
+#ifndef SPIN_T319505854A50BDE3DB1240861AE7BA26B8727A5A_H
+#define SPIN_T319505854A50BDE3DB1240861AE7BA26B8727A5A_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// spin
+struct  spin_t319505854A50BDE3DB1240861AE7BA26B8727A5A  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
+{
+public:
+	// System.Single spin::speed
+	float ___speed_4;
+	// UnityEngine.GameObject spin::about
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___about_5;
+
+public:
+	inline static int32_t get_offset_of_speed_4() { return static_cast<int32_t>(offsetof(spin_t319505854A50BDE3DB1240861AE7BA26B8727A5A, ___speed_4)); }
+	inline float get_speed_4() const { return ___speed_4; }
+	inline float* get_address_of_speed_4() { return &___speed_4; }
+	inline void set_speed_4(float value)
+	{
+		___speed_4 = value;
+	}
+
+	inline static int32_t get_offset_of_about_5() { return static_cast<int32_t>(offsetof(spin_t319505854A50BDE3DB1240861AE7BA26B8727A5A, ___about_5)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_about_5() const { return ___about_5; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_about_5() { return &___about_5; }
+	inline void set_about_5(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___about_5 = value;
+		Il2CppCodeGenWriteBarrier((&___about_5), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // SPIN_T319505854A50BDE3DB1240861AE7BA26B8727A5A_H
 #ifndef SPATIALMAPPINGMANAGER_TD0F7D28E4A17BB93A79AAA8AC31468E97A4284E1_H
 #define SPATIALMAPPINGMANAGER_TD0F7D28E4A17BB93A79AAA8AC31468E97A4284E1_H
 #ifdef __clang__
@@ -4993,6 +5037,14 @@ extern "C" IL2CPP_METHOD_ATTR void Exception__ctor_m5FEC89FBFACEEDCEE29CCFD44A85
 extern "C" IL2CPP_METHOD_ATTR void Exception__ctor_m89BADFF36C3B170013878726E07729D51AA9FBE0 (Exception_t * __this, String_t* p0, const RuntimeMethod* method);
 // System.Void System.Exception::.ctor(System.String,System.Exception)
 extern "C" IL2CPP_METHOD_ATTR void Exception__ctor_m62590BC1925B7B354EBFD852E162CD170FEB861D (Exception_t * __this, String_t* p0, Exception_t * p1, const RuntimeMethod* method);
+// System.Boolean UnityEngine.Object::op_Implicit(UnityEngine.Object)
+extern "C" IL2CPP_METHOD_ATTR bool Object_op_Implicit_m8B2A44B4B1406ED346D1AE6D962294FD58D0D534 (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 * p0, const RuntimeMethod* method);
+// UnityEngine.Vector3 UnityEngine.Transform::get_position()
+extern "C" IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  Transform_get_position_mF54C3A064F7C8E24F1C56EE128728B2E4485E294 (Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * __this, const RuntimeMethod* method);
+// UnityEngine.Vector3 UnityEngine.Vector3::get_up()
+extern "C" IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  Vector3_get_up_m6309EBC4E42D6D0B3D28056BD23D0331275306F7 (const RuntimeMethod* method);
+// System.Void UnityEngine.Transform::RotateAround(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+extern "C" IL2CPP_METHOD_ATTR void Transform_RotateAround_m433D292B2A38A5A4DEC7DCAE0A8BEAC5C3B2D1DD (Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  p0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  p1, float p2, const RuntimeMethod* method);
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -9295,6 +9347,79 @@ extern "C" IL2CPP_METHOD_ATTR void SystemException__ctor_m50739DF43EA19713F37881
 		IL2CPP_RUNTIME_CLASS_INIT(Exception_t_il2cpp_TypeInfo_var);
 		Exception__ctor_m62590BC1925B7B354EBFD852E162CD170FEB861D(__this, L_0, L_1, /*hidden argument*/NULL);
 		// public SystemException(string message, Exception innerException) : base(message, innerException) {}
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void spin::Start()
+extern "C" IL2CPP_METHOD_ATTR void spin_Start_m5902AD81BBED5CA6CAF7C7C91396F14D52749646 (spin_t319505854A50BDE3DB1240861AE7BA26B8727A5A * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (spin_Start_m5902AD81BBED5CA6CAF7C7C91396F14D52749646_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (!about)
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_0 = __this->get_about_5();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Implicit_m8B2A44B4B1406ED346D1AE6D962294FD58D0D534(L_0, /*hidden argument*/NULL);
+		if (L_1)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		// about = gameObject;
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_2 = Component_get_gameObject_m0B0570BA8DDD3CD78A9DB568EA18D7317686603C(__this, /*hidden argument*/NULL);
+		__this->set_about_5(L_2);
+	}
+
+IL_0019:
+	{
+		// }
+		return;
+	}
+}
+// System.Void spin::Update()
+extern "C" IL2CPP_METHOD_ATTR void spin_Update_m8EBE036D4F2824C8D802E0408EC9A30780674CAD (spin_t319505854A50BDE3DB1240861AE7BA26B8727A5A * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (spin_Update_m8EBE036D4F2824C8D802E0408EC9A30780674CAD_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// transform.RotateAround(about.transform.position, Vector3.up, speed);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_0 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(__this, /*hidden argument*/NULL);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_1 = __this->get_about_5();
+		NullCheck(L_1);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_2 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_1, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_3 = Transform_get_position_mF54C3A064F7C8E24F1C56EE128728B2E4485E294(L_2, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_4 = Vector3_get_up_m6309EBC4E42D6D0B3D28056BD23D0331275306F7(/*hidden argument*/NULL);
+		float L_5 = __this->get_speed_4();
+		NullCheck(L_0);
+		Transform_RotateAround_m433D292B2A38A5A4DEC7DCAE0A8BEAC5C3B2D1DD(L_0, L_3, L_4, L_5, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void spin::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void spin__ctor_mCAB4C2FB56C35CE8D5B5ECE7EEFC41CE4BAA5526 (spin_t319505854A50BDE3DB1240861AE7BA26B8727A5A * __this, const RuntimeMethod* method)
+{
+	{
+		MonoBehaviour__ctor_mEAEC84B222C60319D593E456D769B3311DFCEF97(__this, /*hidden argument*/NULL);
 		return;
 	}
 }

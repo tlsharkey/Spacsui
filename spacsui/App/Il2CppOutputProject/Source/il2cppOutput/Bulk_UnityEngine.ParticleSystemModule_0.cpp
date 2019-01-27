@@ -1567,6 +1567,8 @@ extern "C" IL2CPP_METHOD_ATTR void ParticleSystem_SetParticles_mBD5C10AC2CCDECED
 extern "C" IL2CPP_METHOD_ATTR int32_t ParticleSystem_GetParticles_m4249C2BF5B18BD67923AF8ACD3F3C2C65319968D (ParticleSystem_t45DA87A3E83E738DA3FDAA5A48A133F1A1247C3D * __this, ParticleU5BU5D_tE146043E7340CCAD7275E144D4CCD028AF929513* ___particles0, int32_t ___size1, int32_t ___offset2, const RuntimeMethod* method);
 // System.Int32 UnityEngine.ParticleSystem::GetParticles(UnityEngine.ParticleSystem/Particle[],System.Int32)
 extern "C" IL2CPP_METHOD_ATTR int32_t ParticleSystem_GetParticles_mB4211CC9ACAB804F13A9112ECA459ED3AD0F980E (ParticleSystem_t45DA87A3E83E738DA3FDAA5A48A133F1A1247C3D * __this, ParticleU5BU5D_tE146043E7340CCAD7275E144D4CCD028AF929513* ___particles0, int32_t ___size1, const RuntimeMethod* method);
+// System.Void UnityEngine.ParticleSystem::Play(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void ParticleSystem_Play_mBB238026E6389F44C76498D31038FE7A8C47E3AA (ParticleSystem_t45DA87A3E83E738DA3FDAA5A48A133F1A1247C3D * __this, bool ___withChildren0, const RuntimeMethod* method);
 // System.Void UnityEngine.ParticleSystem::Emit_Internal(System.Int32)
 extern "C" IL2CPP_METHOD_ATTR void ParticleSystem_Emit_Internal_m1857956B7219B8232C1777E515706F8075C8B925 (ParticleSystem_t45DA87A3E83E738DA3FDAA5A48A133F1A1247C3D * __this, int32_t ___count0, const RuntimeMethod* method);
 // System.Void UnityEngine.ParticleSystem::Emit_Injected(UnityEngine.ParticleSystem/EmitParams&,System.Int32)
@@ -1643,6 +1645,10 @@ extern "C" IL2CPP_METHOD_ATTR void Particle_set_angularVelocity_mAF1DDE92396A5C1
 extern "C" IL2CPP_METHOD_ATTR void ShapeModule_SetEnabled_mC565C29B24D41E617CB2C44AEB08798BD43E357C (ParticleSystem_t45DA87A3E83E738DA3FDAA5A48A133F1A1247C3D * ___system0, bool ___value1, const RuntimeMethod* method);
 // System.Void UnityEngine.ParticleSystem/ShapeModule::set_enabled(System.Boolean)
 extern "C" IL2CPP_METHOD_ATTR void ShapeModule_set_enabled_mC7CC4D33D22925D65AD23FB8FA02CFB8C4509F02 (ShapeModule_tF3CE38BED68607FE893E445DE9D21D8F1DCE6A51 * __this, bool ___value0, const RuntimeMethod* method);
+// System.Void UnityEngine.ParticleSystem/ShapeModule::SetRadius(UnityEngine.ParticleSystem,System.Single)
+extern "C" IL2CPP_METHOD_ATTR void ShapeModule_SetRadius_m2DE412EF64400334ED49542C9ECDE51AD0F859A3 (ParticleSystem_t45DA87A3E83E738DA3FDAA5A48A133F1A1247C3D * ___system0, float ___value1, const RuntimeMethod* method);
+// System.Void UnityEngine.ParticleSystem/ShapeModule::set_radius(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void ShapeModule_set_radius_mF768524F67A5DE9440DE3F211346B117E72DD623 (ShapeModule_tF3CE38BED68607FE893E445DE9D21D8F1DCE6A51 * __this, float ___value0, const RuntimeMethod* method);
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -1846,6 +1852,23 @@ IL_000f:
 	{
 		int32_t L_2 = V_0;
 		return L_2;
+	}
+}
+// System.Void UnityEngine.ParticleSystem::Play(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void ParticleSystem_Play_mBB238026E6389F44C76498D31038FE7A8C47E3AA (ParticleSystem_t45DA87A3E83E738DA3FDAA5A48A133F1A1247C3D * __this, bool ___withChildren0, const RuntimeMethod* method)
+{
+	typedef void (*ParticleSystem_Play_mBB238026E6389F44C76498D31038FE7A8C47E3AA_ftn) (ParticleSystem_t45DA87A3E83E738DA3FDAA5A48A133F1A1247C3D *, bool);
+	static ParticleSystem_Play_mBB238026E6389F44C76498D31038FE7A8C47E3AA_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (ParticleSystem_Play_mBB238026E6389F44C76498D31038FE7A8C47E3AA_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ParticleSystem::Play(System.Boolean)");
+	_il2cpp_icall_func(__this, ___withChildren0);
+}
+// System.Void UnityEngine.ParticleSystem::Play()
+extern "C" IL2CPP_METHOD_ATTR void ParticleSystem_Play_m5BC5E6B56FCF639CAD5DF41B51DC05A0B444212F (ParticleSystem_t45DA87A3E83E738DA3FDAA5A48A133F1A1247C3D * __this, const RuntimeMethod* method)
+{
+	{
+		ParticleSystem_Play_mBB238026E6389F44C76498D31038FE7A8C47E3AA(__this, (bool)1, /*hidden argument*/NULL);
+		return;
 	}
 }
 // System.Void UnityEngine.ParticleSystem::Emit(System.Int32)
@@ -2904,6 +2927,21 @@ extern "C"  void ShapeModule_set_enabled_mC7CC4D33D22925D65AD23FB8FA02CFB8C4509F
 	ShapeModule_tF3CE38BED68607FE893E445DE9D21D8F1DCE6A51 * _thisAdjusted = reinterpret_cast<ShapeModule_tF3CE38BED68607FE893E445DE9D21D8F1DCE6A51 *>(__this + 1);
 	ShapeModule_set_enabled_mC7CC4D33D22925D65AD23FB8FA02CFB8C4509F02(_thisAdjusted, ___value0, method);
 }
+// System.Void UnityEngine.ParticleSystem/ShapeModule::set_radius(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void ShapeModule_set_radius_mF768524F67A5DE9440DE3F211346B117E72DD623 (ShapeModule_tF3CE38BED68607FE893E445DE9D21D8F1DCE6A51 * __this, float ___value0, const RuntimeMethod* method)
+{
+	{
+		ParticleSystem_t45DA87A3E83E738DA3FDAA5A48A133F1A1247C3D * L_0 = __this->get_m_ParticleSystem_0();
+		float L_1 = ___value0;
+		ShapeModule_SetRadius_m2DE412EF64400334ED49542C9ECDE51AD0F859A3(L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+extern "C"  void ShapeModule_set_radius_mF768524F67A5DE9440DE3F211346B117E72DD623_AdjustorThunk (RuntimeObject * __this, float ___value0, const RuntimeMethod* method)
+{
+	ShapeModule_tF3CE38BED68607FE893E445DE9D21D8F1DCE6A51 * _thisAdjusted = reinterpret_cast<ShapeModule_tF3CE38BED68607FE893E445DE9D21D8F1DCE6A51 *>(__this + 1);
+	ShapeModule_set_radius_mF768524F67A5DE9440DE3F211346B117E72DD623(_thisAdjusted, ___value0, method);
+}
 // System.Void UnityEngine.ParticleSystem/ShapeModule::SetEnabled(UnityEngine.ParticleSystem,System.Boolean)
 extern "C" IL2CPP_METHOD_ATTR void ShapeModule_SetEnabled_mC565C29B24D41E617CB2C44AEB08798BD43E357C (ParticleSystem_t45DA87A3E83E738DA3FDAA5A48A133F1A1247C3D * ___system0, bool ___value1, const RuntimeMethod* method)
 {
@@ -2911,6 +2949,15 @@ extern "C" IL2CPP_METHOD_ATTR void ShapeModule_SetEnabled_mC565C29B24D41E617CB2C
 	static ShapeModule_SetEnabled_mC565C29B24D41E617CB2C44AEB08798BD43E357C_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (ShapeModule_SetEnabled_mC565C29B24D41E617CB2C44AEB08798BD43E357C_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ParticleSystem/ShapeModule::SetEnabled(UnityEngine.ParticleSystem,System.Boolean)");
+	_il2cpp_icall_func(___system0, ___value1);
+}
+// System.Void UnityEngine.ParticleSystem/ShapeModule::SetRadius(UnityEngine.ParticleSystem,System.Single)
+extern "C" IL2CPP_METHOD_ATTR void ShapeModule_SetRadius_m2DE412EF64400334ED49542C9ECDE51AD0F859A3 (ParticleSystem_t45DA87A3E83E738DA3FDAA5A48A133F1A1247C3D * ___system0, float ___value1, const RuntimeMethod* method)
+{
+	typedef void (*ShapeModule_SetRadius_m2DE412EF64400334ED49542C9ECDE51AD0F859A3_ftn) (ParticleSystem_t45DA87A3E83E738DA3FDAA5A48A133F1A1247C3D *, float);
+	static ShapeModule_SetRadius_m2DE412EF64400334ED49542C9ECDE51AD0F859A3_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (ShapeModule_SetRadius_m2DE412EF64400334ED49542C9ECDE51AD0F859A3_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ParticleSystem/ShapeModule::SetRadius(UnityEngine.ParticleSystem,System.Single)");
 	_il2cpp_icall_func(___system0, ___value1);
 }
 #ifdef __clang__

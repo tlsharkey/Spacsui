@@ -13452,8 +13452,6 @@ extern "C" IL2CPP_METHOD_ATTR float Vector3_get_Item_mC3B9D35C070A91D7CA5C5B4728
 extern "C" IL2CPP_METHOD_ATTR void Vector3_set_Item_m89FF112CEC0D9ED43F1C4FE01522C75394B30AE6 (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * __this, int32_t ___index0, float ___value1, const RuntimeMethod* method);
 // System.Void UnityEngine.Vector3::Set(System.Single,System.Single,System.Single)
 extern "C" IL2CPP_METHOD_ATTR void Vector3_Set_m8F08F9B5324A755A28A0832DCA2A0CB19423E5EC (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * __this, float ___newX0, float ___newY1, float ___newZ2, const RuntimeMethod* method);
-// System.Void UnityEngine.Vector3::Scale(UnityEngine.Vector3)
-extern "C" IL2CPP_METHOD_ATTR void Vector3_Scale_mD40CDE2B62BCBABD49426FAE104814F29CF2AA0B (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___scale0, const RuntimeMethod* method);
 // System.Boolean UnityEngine.Vector3::Equals(UnityEngine.Vector3)
 extern "C" IL2CPP_METHOD_ATTR bool Vector3_Equals_m6B991540378DB8541CEB9472F7ED2BF5FF72B5DB (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___other0, const RuntimeMethod* method);
 // System.Boolean UnityEngine.Vector3::Equals(System.Object)
@@ -30194,8 +30192,8 @@ extern "C" IL2CPP_METHOD_ATTR void Transform_Translate_m0F354939D5084DDFF6B9902E
 		return;
 	}
 }
-// System.Void UnityEngine.Transform::Translate(System.Single,System.Single,System.Single)
-extern "C" IL2CPP_METHOD_ATTR void Transform_Translate_m3367DF1167F152D8801578EBA4C51A398A50FE71 (Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * __this, float ___x0, float ___y1, float ___z2, const RuntimeMethod* method)
+// System.Void UnityEngine.Transform::Translate(System.Single,System.Single,System.Single,UnityEngine.Space)
+extern "C" IL2CPP_METHOD_ATTR void Transform_Translate_m5E2AEA765EC8D4A0D84C1DCB2DC7F7E952D3B116 (Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * __this, float ___x0, float ___y1, float ___z2, int32_t ___relativeTo3, const RuntimeMethod* method)
 {
 	{
 		float L_0 = ___x0;
@@ -30204,7 +30202,8 @@ extern "C" IL2CPP_METHOD_ATTR void Transform_Translate_m3367DF1167F152D8801578EB
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_3;
 		memset(&L_3, 0, sizeof(L_3));
 		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_3), L_0, L_1, L_2, /*hidden argument*/NULL);
-		Transform_Translate_m91072CBFB456E51FC3435D890E3F7E6A04F4BABD(__this, L_3, 1, /*hidden argument*/NULL);
+		int32_t L_4 = ___relativeTo3;
+		Transform_Translate_m91072CBFB456E51FC3435D890E3F7E6A04F4BABD(__this, L_3, L_4, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -33156,27 +33155,6 @@ IL_0039:
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_7 = V_0;
 		return L_7;
 	}
-}
-// System.Void UnityEngine.Vector3::Scale(UnityEngine.Vector3)
-extern "C" IL2CPP_METHOD_ATTR void Vector3_Scale_mD40CDE2B62BCBABD49426FAE104814F29CF2AA0B (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___scale0, const RuntimeMethod* method)
-{
-	{
-		float L_0 = __this->get_x_2();
-		float L_1 = (&___scale0)->get_x_2();
-		__this->set_x_2(((float)il2cpp_codegen_multiply((float)L_0, (float)L_1)));
-		float L_2 = __this->get_y_3();
-		float L_3 = (&___scale0)->get_y_3();
-		__this->set_y_3(((float)il2cpp_codegen_multiply((float)L_2, (float)L_3)));
-		float L_4 = __this->get_z_4();
-		float L_5 = (&___scale0)->get_z_4();
-		__this->set_z_4(((float)il2cpp_codegen_multiply((float)L_4, (float)L_5)));
-		return;
-	}
-}
-extern "C"  void Vector3_Scale_mD40CDE2B62BCBABD49426FAE104814F29CF2AA0B_AdjustorThunk (RuntimeObject * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___scale0, const RuntimeMethod* method)
-{
-	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * _thisAdjusted = reinterpret_cast<Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *>(__this + 1);
-	Vector3_Scale_mD40CDE2B62BCBABD49426FAE104814F29CF2AA0B(_thisAdjusted, ___scale0, method);
 }
 // UnityEngine.Vector3 UnityEngine.Vector3::Cross(UnityEngine.Vector3,UnityEngine.Vector3)
 extern "C" IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  Vector3_Cross_m3E9DBC445228FDB850BDBB4B01D6F61AC0111887 (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___lhs0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___rhs1, const RuntimeMethod* method)
